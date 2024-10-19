@@ -1,5 +1,3 @@
-import Wave from "@/public/static/images/download.svg";
-import Image from "next/image";
 import { Roboto, Arsenal } from "next/font/google";
 import clsx from "clsx";
 
@@ -75,7 +73,7 @@ export default function Banner() {
                 <span
                   className={clsx(
                     roboto.className,
-                    "text-4xl font-medium tracking-[3px] text-[#E7DCD8]",
+                    "text-4xl font-medium tracking-[3px] text-[#E7DCD8]"
                   )}
                 >
                   VÙNG ĐẤT
@@ -86,7 +84,7 @@ export default function Banner() {
                 <h1
                   className={clsx(
                     roboto.className,
-                    "text-7xl font-semibold tracking-[-3px] text-transparent",
+                    "text-7xl font-semibold tracking-[-3px] text-transparent"
                   )}
                   style={{
                     backgroundImage:
@@ -111,7 +109,7 @@ export default function Banner() {
                   <span
                     className={clsx(
                       arsenal.className,
-                      "text-sm font-semibold uppercase text-white",
+                      "text-sm font-semibold uppercase text-white"
                     )}
                   >
                     Đăng ký tư vấn

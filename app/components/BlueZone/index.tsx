@@ -1,6 +1,5 @@
 "use client";
 import clsx from "clsx";
-import { motion } from "framer-motion";
 import { Calistoga, Roboto } from "next/font/google";
 
 const calistoga = Calistoga({
