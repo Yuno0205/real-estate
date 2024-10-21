@@ -34,7 +34,7 @@ export default function Overall() {
       <div className="flex bg-[#A6EEF182]">
         <div className="w-1/3 px-4">
           <div>
-            <Image src={congvien} alt="overall" />
+            <Image src={congvien} alt="overall" className="object-cover" />
           </div>
           <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
             Hệ sinh thái tự nhiên
@@ -67,8 +67,7 @@ export default function Overall() {
             <Image
               src={mapImg}
               alt="matdoxaydung"
-              className="rounded-xl"
-              objectFit="cover"
+              className="rounded-xl object-cover"
             />
           </div>
           <div className="w-1/4 flex">

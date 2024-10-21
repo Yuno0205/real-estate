@@ -20,7 +20,12 @@ export default function Header() {
           <div className="flex items-center max-w-[1140px] mx-auto h-full">
             <div className="w-1/6 px-4 py-2.5">
               <Link href={"/"}>
-                <Image src={logo} alt="logo" objectFit="cover" height={68} />
+                <Image
+                  src={logo}
+                  alt="logo"
+                  className="object-cover"
+                  height={68}
+                />
               </Link>
             </div>
             <div className="w-3/4 flex justify-end h-full">
@@ -110,14 +115,14 @@ export default function Header() {
                   <Image
                     src={flagVN}
                     alt="flagUSA"
-                    objectFit="cover"
                     width={24}
+                    className="object-cover"
                   />
                   <Image
                     src={flagUSA}
                     alt="flagUSA"
-                    objectFit="cover"
                     width={24}
+                    className="object-cover"
                   />
                 </div>
               </div>
