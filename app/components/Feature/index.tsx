@@ -98,7 +98,7 @@ export const Feature = () => {
               )}
             >
               Thay cho hàng rào ngăn cách, cư dân tại EcoVillage Saigon River
-              chuộng "rào xanh" bằng cây cối, tạo thành ranh giới tự nhiên vừa
+              chuộng `rào xanh` bằng cây cối, tạo thành ranh giới tự nhiên vừa
               đủ riêng tư, vừa đủ để kết nối với xóm giềng.
             </span>
           </div>
