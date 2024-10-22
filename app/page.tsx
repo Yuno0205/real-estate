@@ -1,5 +1,7 @@
 import Banner from "./components/Banner";
 import BlueZone from "./components/BlueZone";
+import { Club } from "./components/Club";
+import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
 import Header from "./components/Header";
 import { Location } from "./components/Location";
@@ -18,6 +20,8 @@ export default function Home() {
       <Offer />
       <Feature />
       <Location />
+      <Extention />
+      <Club />
     </>
   );
 }

@@ -4,7 +4,6 @@ import Image from "next/image";
 import location from "@/public/static/images/location-1-1024x641.png";
 import location2 from "@/public/static/images/Vi-tri-dac-diaEco-Village-Sai-Gon-River-1024x512.jpg";
 import tienich from "@/public/static/images/tien-ich-ecovillage-saogon-river.jpg";
-import leaf from "@/public/static/images/leaft_right.png";
 
 const david = David_Libre({
   subsets: ["vietnamese"],
