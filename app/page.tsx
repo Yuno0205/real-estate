@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import { Location } from "./components/Location";
 import { Offer } from "./components/Offer";
 import Overall from "./components/Overall";
+import { Resort } from "./components/Resort";
 import SaiGonRiver from "./components/SaiGonRiver";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Location />
       <Extention />
       <Club />
+      <Resort />
     </>
   );
 }
