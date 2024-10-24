@@ -9,6 +9,8 @@ import { Offer } from "./components/Offer";
 import Overall from "./components/Overall";
 import { Resort } from "./components/Resort";
 import SaiGonRiver from "./components/SaiGonRiver";
+import { Spa } from "./components/Spa";
+import { Testimonial } from "./components/Testimonial";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
       <Extention />
       <Club />
       <Resort />
+      <Spa />
+      <Testimonial />
     </>
   );
 }
