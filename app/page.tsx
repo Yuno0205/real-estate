@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import BlueZone from "./components/BlueZone";
 import { Club } from "./components/Club";
+import { Exp } from "./components/Exp";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
 import Header from "./components/Header";
@@ -28,6 +29,7 @@ export default function Home() {
       <Resort />
       <Spa />
       <Testimonial />
+      <Exp />
     </>
   );
 }
