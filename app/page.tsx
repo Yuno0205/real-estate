@@ -4,6 +4,7 @@ import { Club } from "./components/Club";
 import { Exp } from "./components/Exp";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
+import { Infomation } from "./components/Infomation";
 import Header from "./components/Header";
 import { Location } from "./components/Location";
 import { Offer } from "./components/Offer";
@@ -30,6 +31,7 @@ export default function Home() {
       <Spa />
       <Testimonial />
       <Exp />
+      <Infomation />
     </>
   );
 }
