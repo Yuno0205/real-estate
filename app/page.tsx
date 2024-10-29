@@ -13,6 +13,7 @@ import { Resort } from "./components/Resort";
 import SaiGonRiver from "./components/SaiGonRiver";
 import { Spa } from "./components/Spa";
 import { Testimonial } from "./components/Testimonial";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <Testimonial />
       <Exp />
       <Infomation />
+      <Footer />
     </>
   );
 }
