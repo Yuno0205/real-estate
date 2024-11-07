@@ -28,7 +28,7 @@ export default function Banner() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
           preserveAspectRatio="none"
-          color="#dbf0fe"
+          color="#D4FEC8"
           fill="currentColor"
           height={54}
           className="w-full"
