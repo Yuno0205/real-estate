@@ -13,12 +13,9 @@ export default function Header() {
   return (
     <header>
       <nav className="fixed top-0 z-10 left-0 right-0">
-        <section
-          style={{ backgroundColor: "#171C32F0" }}
-          className=" px-9 relative"
-        >
-          <div className="flex items-center max-w-[1140px] mx-auto h-full">
-            <div className="w-1/6 px-4 py-2.5">
+        <section className=" px-9 relative bg-[#506E4F]">
+          <div className="flex items-center max-w-[1140px] mx-auto h-full  min-h-[70px]">
+            {/* <div className="w-1/6 px-4 py-2.5">
               <Link href={"/"}>
                 <Image
                   src={logo}
@@ -27,7 +24,7 @@ export default function Header() {
                   height={68}
                 />
               </Link>
-            </div>
+            </div> */}
             <div className="w-3/4 flex justify-end h-full">
               <ul className="flex justify-end">
                 <li>

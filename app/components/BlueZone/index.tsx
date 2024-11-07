@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 export default function BlueZone() {
   return (
-    <div className="min-h-[800px] bg-[#DCF1FF] bg-[url('/static/images/blue-zone.png')] bg-center bg-no-repeat py-[160px]">
+    <div className="min-h-[800px] bg-[#DCF1FF] bg-[url('/static/images/sea.png')] bg-center bg-no-repeat py-[160px] bg-[#D4FEC8]">
       <div className="relative mx-auto flex min-h-[300px] max-w-[1140px] justify-center">
         <div className="flex min-h-1 w-2/3 flex-col items-center">
           {/* Play button */}
