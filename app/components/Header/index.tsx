@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "@/public/static/images/logo-eco-village-sai-gon-river.png";
 import flagVN from "@/public/static/images/vi.svg";
 import flagUSA from "@/public/static/images/en-us.svg";
 import Link from "next/link";

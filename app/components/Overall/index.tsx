@@ -21,13 +21,20 @@ const roboto = Roboto({
 export default function Overall() {
   return (
     <>
-      <div className="py-[60px] bg-[#A6EEF182]">
+      <div className="py-[60px] bg-[#DFFDE8]">
         <div className="text-center gap-2 flex flex-col">
-          <h2 className={clsx("text-6xl uppercase", arsenal.className)}>
+          <h2
+            className={clsx(
+              "text-6xl uppercase text-[#2065AD]",
+              arsenal.className
+            )}
+          >
             Sức hấp dẫn của
           </h2>
-          <span className={clsx("text-6xl mt-3", pinyon.className)}>
-            Vùng đất Blue Zone đầu tiên của Việt Nam
+          <span
+            className={clsx("text-6xl mt-3 text-[#3F737B]", pinyon.className)}
+          >
+            Kiến trúc cộng sinh tại dự án
           </span>
         </div>
       </div>
