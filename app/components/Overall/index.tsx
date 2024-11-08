@@ -5,7 +5,6 @@ import congvien1 from "@/public/static/images/park1.jpg";
 import congvien2 from "@/public/static/images/park2.jpg";
 import congvien3 from "@/public/static/images/park3.jpg";
 import factory from "@/public/static/images/contrucsion.jpg";
-import mapImg from "@/public/static/images/mat-do-xay-dung-ecopark-1024x724.jpg";
 
 const arsenal = Arsenal({
   subsets: ["vietnamese"],

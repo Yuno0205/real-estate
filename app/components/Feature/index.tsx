@@ -13,39 +13,40 @@ const david = David_Libre({
 export const Feature = () => {
   return (
     <>
-      <div className="w-full py-[110px] justify-center bg-[#F7F7F7]">
+      <div
+        style={{ backgroundSize: "10% auto" }}
+        className="w-full pb-[110px] pt-[250px] justify-center bg-[#F7F7F7] bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat"
+      >
         <div className="flex w-2/3 flex-col mx-auto gap-2">
-          <span className="text-2xl leading-8 text-[#3A689D] text-center font-semibold">
-            NHÀ SÁNG LẬP ECO PARK KIẾN TẠO NHỮNG NGÔI NHÀ
+          <span className="text-2xl leading-8 text-[#395F2E] text-center font-semibold">
+            NHÀ SÁNG LẬP ELITE LIFE KIẾN TẠO NHỮNG NGÔI NHÀ
           </span>
-          <h5 className="text-center">
+          <h5 className="text-start pl-16">
             <span className="text-[#395F5C] text-3xl">Không chỉ </span>
-            <span className="text-[#5B451E] text-3xl font-semibold">
-              sống tận hưởng
+            <span className="text-[#FF860D] text-3xl font-bold">
+              sống thư giãn và tiện nghi
             </span>
           </h5>
-          <h5 className="text-end">
+          <h5 className="text-end pr-16">
             <span className="text-[#395F5C] text-3xl">mà còn </span>
-            <span className="text-[#5B451E] text-3xl font-semibold">
-              sống trường thọ
+            <span className="text-[#FF860D] text-3xl font-semibold">
+              sống vượt trội và khác biệt
             </span>
           </h5>
 
           <div className="mt-4 mb-6">
             <p className={clsx(caratere.className, "text-2xl text-[#0D4478]")}>
-              “Ngước nhìn bầu trời xanh và hít thở không khí trong lành là điều
-              mà cư dân sống trong siêu đô thị hiếm khi được trải nghiệm. Nhưng
-              chỉ cách trung tâm thành phố Hồ Chí Minh một dòng sông, Blue
-              Forest mở ra một vùng đất hoàn toàn đối lập – nơi con người được
-              sống với tỷ lệ cây xanh lên đến 32m2/người – cao gấp 55 lần so với
-              ở Thành phố Hồ Chí Minh.”
+              Khoảng xanh rộng lớn bao quanh cùng địa hình một mặt giáp sông,
+              bên sông lại và công viên cây xanh nhưng còn giữ tự nhiên lên lỏi
+              cho Elite Life tạo một vùng khí hậu hoàn hảo, vừa có bóng mặt che
+              chở, vừa giữ độ ẩm lý tưởng.
             </p>
           </div>
         </div>
       </div>
       <div className="w-full bg-[#F7F7F7] pb-[160px]">
-        <div className="flex px-48">
-          <div className="p-14 mx-4 flex flex-col w-1/3 bg-white rounded-xl">
+        <div className="flex max-w-[1140px] mx-auto  gap-4">
+          <div className="p-14 flex flex-col w-full sm:w-1/2 lg:w-1/3 bg-white rounded-xl">
             <div className="mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,7 @@ export const Feature = () => {
               chở, vừa giữ độ ẩm lý tưởng.
             </span>
           </div>
-          <div className="p-14 mx-4 flex flex-col w-1/3 bg-white rounded-xl">
+          <div className="p-14 flex flex-col w-full sm:w-1/2 lg:w-1/3 bg-white rounded-xl">
             <div className="mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,12 +98,12 @@ export const Feature = () => {
                 "tracking-widest text-justify pb-3"
               )}
             >
-              Thay cho hàng rào ngăn cách, cư dân tại EcoVillage Saigon River
-              chuộng `rào xanh` bằng cây cối, tạo thành ranh giới tự nhiên vừa
-              đủ riêng tư, vừa đủ để kết nối với xóm giềng.
+              Thay cho hàng rào ngăn cách, cư dân trong khu compound Elite Life,
+              chuồng &quot;ráo xanh&quot; bằng cây cối, tạo thành ranh giới tự
+              nhiên vừa giữ riêng tư, vừa đủ để kết nối với xóm giềng.
             </span>
           </div>
-          <div className="p-14 mx-4 flex flex-col w-1/3 bg-white rounded-xl">
+          <div className="p-14 flex flex-col w-full sm:w-1/2 lg:w-1/3 bg-white rounded-xl">
             <div className="mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -130,9 +131,9 @@ export const Feature = () => {
                 "tracking-widest text-justify pb-3"
               )}
             >
-              Không chỉ mở rộng diện tích phủ xanh, Blue Forest còn làm dày thêm
-              khoảng xanh bằng chất lượng cây xanh tạo thành 7 tầng thiên nhiên
-              đan xen, đem lại hiệu quả “điều hòa”, “lọc không khí” tối đa.
+              Không chỉ mở rộng diện tích phủ xanh, Elite Life còn làm dày thêm
+              khoảng xanh bằng việc giữ lại nét riêng với rặng dừa nước bên sông
+              dan xen với cây xanh, đem lại cảnh vật thiên nhiên tự nhiên.
             </span>
           </div>
         </div>

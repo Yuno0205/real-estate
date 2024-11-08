@@ -8,7 +8,7 @@ const arsenal = Arsenal({
 export const Offer = () => {
   return (
     <div className="w-full h-full">
-      <div className="w-full max-w-[1140px] mx-auto px-12 py-14 bg-[#FF7A56] shadow-xl  tracking-wider mb-[-140px] z-10 relative">
+      <div className="w-full max-w-[1140px] mx-auto px-12 py-14 bg-[#FF7A56] shadow-xl  tracking-wider mb-[-140px] z-2 relative">
         <div className="flex gap-2">
           <div className="flex w-1/4">
             <div className="flex flex-col justify-center gap-2">

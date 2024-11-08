@@ -1,28 +1,11 @@
-import Image from "next/image";
 import img from "@/public/static/images/villa.jpg";
-import {
-  Aguafina_Script,
-  Noto_Serif_Toto,
-  Prata,
-  Oswald,
-  Montserrat,
-  Inter,
-} from "next/font/google";
 import clsx from "clsx";
+import { Inter, Montserrat, Oswald, Prata } from "next/font/google";
+import Image from "next/image";
 
 const inter = Inter({
   subsets: ["vietnamese", "latin"],
   weight: ["400", "700"],
-});
-
-const aguafina = Aguafina_Script({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
-const noto = Noto_Serif_Toto({
-  subsets: ["latin"],
-  weight: ["400"],
 });
 
 const prata = Prata({
