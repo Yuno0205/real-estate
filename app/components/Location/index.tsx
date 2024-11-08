@@ -1,9 +1,10 @@
 import clsx from "clsx";
 import { David_Libre, Italianno, Arsenal } from "next/font/google";
 import Image from "next/image";
-import location from "@/public/static/images/location-1-1024x641.png";
+import location from "@/public/static/images/map.png";
 import location2 from "@/public/static/images/Vi-tri-dac-diaEco-Village-Sai-Gon-River-1024x512.jpg";
 import tienich from "@/public/static/images/tien-ich-ecovillage-saogon-river.jpg";
+import leaf from "@/public/static/images/leaft_left.png";
 
 const david = David_Libre({
   subsets: ["vietnamese"],
@@ -21,8 +22,15 @@ const arsenal = Arsenal({
 });
 export const Location = () => {
   return (
-    <div className="w-full">
-      <section className="my-16 flex">
+    <div className="w-full relative">
+      {/* <div
+        style={{
+          backgroundSize: "10% auto",
+          backgroundPosition: "0% 0%",
+        }}
+        className="absolute w-full h-[250px] bg-[url('/static/images/leaft_left.png')] bg-no-repeat transform rotate-45"
+      ></div> */}
+      {/* <section className="my-16 flex">
         <div className="w-1/2 ml-1 mr-6 px-4 flex items-center">
           <div className="flex flex-col w-full gap-3">
             <div className="w-full text-end pr-5">
@@ -62,16 +70,16 @@ export const Location = () => {
             </p>
           </div>
         </div>
-      </section>
-      <section className="mt-[100px] w-full max-w-[1140px] flex justify-center mx-auto">
+      </section> */}
+      {/* <section className="mt-[100px] w-full max-w-[1140px] flex justify-center mx-auto">
         <Image
           alt="location"
           src={location}
           className="object-cover rounded-lg"
         />
-      </section>
+      </section> */}
       <section className="my-[85px] max-w-[1140px] mx-auto flex">
-        <div className="w-1/3 px-4">
+        <div className="w-1/2 px-4">
           <span className="font-bold text-2xl">Giao thông thuận tiện</span>
           <p className="font-semibold text-black text-justify mb-6 mt-3">
             Tiếp giáp cùng lúc 03 tuyến giao thông huyết mạch: DT769, vành đai
@@ -85,10 +93,10 @@ export const Location = () => {
             tiện ích phong phú và đa dạng bậc nhất.
           </p>
         </div>
-        <div className="w-2/3 px-4">
+        <div className="w-1/2 px-4">
           <Image
             alt="location"
-            src={location2}
+            src={location}
             className="object-cover rounded-xl"
             quality={100}
           />
