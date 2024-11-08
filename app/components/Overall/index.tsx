@@ -1,7 +1,10 @@
 import clsx from "clsx";
 import { Arsenal, Pinyon_Script, Roboto } from "next/font/google";
 import Image from "next/image";
-import congvien from "@/public/static/images/congvienvensong.jpg";
+import congvien1 from "@/public/static/images/park1.jpg";
+import congvien2 from "@/public/static/images/park2.jpg";
+import congvien3 from "@/public/static/images/park3.jpg";
+import factory from "@/public/static/images/contrucsion.jpg";
 import mapImg from "@/public/static/images/mat-do-xay-dung-ecopark-1024x724.jpg";
 
 const arsenal = Arsenal({
@@ -38,41 +41,41 @@ export default function Overall() {
           </span>
         </div>
       </div>
-      <div className="flex bg-[#A6EEF182]">
+      <div className="flex bg-[#DFFDE8E5]">
         <div className="w-1/3 px-4">
           <div>
-            <Image src={congvien} alt="overall" className="object-cover" />
+            <Image src={congvien1} alt="overall" className="object-cover" />
           </div>
           <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Hệ sinh thái tự nhiên
+            Hệ sinh thái vườn công viên ven sông
           </span>
         </div>
         <div className="w-1/3 px-4">
           <div>
-            <Image src={congvien} alt="overall" />
+            <Image src={congvien2} alt="overall" />
           </div>
           <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Hệ sinh thái tự nhiên
+            Không gian sống cộng sinh cùng thiên nhiên
           </span>
         </div>
         <div className="w-1/3 px-4">
           <div>
-            <Image src={congvien} alt="overall" />
+            <Image src={congvien3} alt="overall" />
           </div>
           <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Hệ sinh thái tự nhiên
+            Chăm sóc sức khỏe chủ động
           </span>
         </div>
       </div>
 
       <section className="pt-[60px] pb-[80px] relative">
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-[#A6EEF1] to-[#F3F3F3] opacity-50 pointer-events-none"></div>
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-[#DFFDE8E5] to-[#F3F3F3] pointer-events-none"></div>
         <div className="absolute inset-0 w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-bottom bg-no-repeat bg-[20%_auto] opacity-50 pointer-events-none"></div>
 
         <div className="relative flex z-2">
           <div className="w-3/4 object-cover">
             <Image
-              src={mapImg}
+              src={factory}
               alt="matdoxaydung"
               className="rounded-xl object-cover"
             />
@@ -83,11 +86,11 @@ export default function Overall() {
                 <h5 className="text-left">
                   <span
                     className={clsx(
-                      "text-[#286278] font-semibold text-5xl",
+                      "text-[#286278] font-bold text-5xl",
                       arsenal.className
                     )}
                   >
-                    55 HA{" "}
+                    Diện tích 3,5HA{" "}
                   </span>
                   <span
                     className={clsx(
@@ -95,7 +98,18 @@ export default function Overall() {
                       arsenal.className
                     )}
                   >
-                    BÊN DÒNG SÔNG THƠ MỘNG
+                    BÊN CẠNH SÔNG NƯỚC
+                    <br />
+                    <div className="w-full text-end">
+                      <span
+                        className={clsx(
+                          "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-3xl",
+                          arsenal.className
+                        )}
+                      >
+                        THƠ MỘNG
+                      </span>
+                    </div>
                   </span>
                 </h5>
               </div>
@@ -104,19 +118,31 @@ export default function Overall() {
                 <h5 className="text-left mt-6 mb-11">
                   <span
                     className={clsx(
-                      "text-[#286278] font-bold text-5xl",
+                      "text-[#286278] font-semibold text-4xl",
                       roboto.className
                     )}
                   >
-                    16,5 HA{" "}
+                    6000M
+                    <sup className="text-[#30676E] text-3xl">2</sup>
                   </span>
                   <span
                     className={clsx(
-                      "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-3xl uppercase",
+                      "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-xl uppercase pl-2",
                       arsenal.className
                     )}
                   >
-                    Cây xanh, công viên, mặt nước nội khu
+                    Cây xanh, công viên
+                    <br />
+                    <div className="w-full text-end">
+                      <span
+                        className={clsx(
+                          "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-xl uppercase ",
+                          arsenal.className
+                        )}
+                      >
+                        Bên sông
+                      </span>
+                    </div>
                   </span>
                 </h5>
               </div>
@@ -128,37 +154,36 @@ export default function Overall() {
                 )}
               >
                 <li className="pl-2.5 py-2 rounded-xl hover:bg-[#9edbde]">
-                  <span>Công viên Six Senses</span>
+                  <span>Không gian độc bản chỉ </span>
                   <span
                     className={clsx("text-[#D67627] text-lg", roboto.className)}
                   >
                     {" "}
-                    2 ha
+                    310 sản phẩm
                   </span>
                 </li>
 
                 <li className="pl-2.5 py-2 rounded-xl hover:bg-[#9edbde]">
-                  <span>Quảng trường All Blue</span>
+                  <span>Mặt tiền dự án lộ giới 826E </span>
+                  <span
+                    className={clsx("text-[#D67627] text-lg", roboto.className)}
+                  >
+                    40 m
+                  </span>
+                </li>
+
+                <li className="pl-2.5 py-2 rounded-xl hover:bg-[#9edbde]">
+                  <span>Hồ bơi dành riêng cho cư dân </span>
                   <span
                     className={clsx("text-[#D67627] text-lg", roboto.className)}
                   >
                     {" "}
-                    2 ha
+                    ~200m ha
                   </span>
                 </li>
 
                 <li className="pl-2.5 py-2 rounded-xl hover:bg-[#9edbde]">
-                  <span>Công viên nội khu </span>
-                  <span
-                    className={clsx("text-[#D67627] text-lg", roboto.className)}
-                  >
-                    {" "}
-                    2 ha
-                  </span>
-                </li>
-
-                <li className="pl-2.5 py-2 rounded-xl hover:bg-[#9edbde]">
-                  <span> Cây xanh nội khu</span>
+                  <span>An ninh, an cư, an toàn trong khu</span>
                   <span
                     className={clsx("text-[#D67627] text-lg", roboto.className)}
                   >
@@ -173,7 +198,7 @@ export default function Overall() {
                     className={clsx("text-[#D67627] text-lg", roboto.className)}
                   >
                     {" "}
-                    5 ha
+                    compound
                   </span>
                 </li>
               </ol>
