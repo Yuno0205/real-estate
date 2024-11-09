@@ -2,9 +2,17 @@ import luxury from "@/public/static/images/luxury.jpg";
 import { Arsenal, Pinyon_Script } from "next/font/google";
 import clsx from "clsx";
 import Image from "next/image";
+import mb1 from "@/public/static/images/mb1.jpg";
+import mb2 from "@/public/static/images/mb2.jpg";
+import mb3 from "@/public/static/images/mb3.jpg";
+import mb4 from "@/public/static/images/mb4.jpg";
+import flat1 from "@/public/static/images/flat1.jpg";
+import flat2 from "@/public/static/images/flat2.jpg";
+import flat3 from "@/public/static/images/flat3.jpg";
+import flat4 from "@/public/static/images/flat4.jpg";
 
 const arsenal = Arsenal({
-  subsets: ["vietnamese"],
+  subsets: ["vietnamese", "latin"],
   weight: ["400", "700"],
 });
 const pinyon = Pinyon_Script({
@@ -49,7 +57,7 @@ export const Resort = () => {
       </section>
       <section
         style={{ backgroundSize: "12% auto" }}
-        className="w-full h-full bg-[url('/static/images/leaft_left.png')] bg-left-bottom bg-no-repeat my-[104px]"
+        className="w-full h-full  my-[104px]"
       >
         <div className="max-w-[1140px] mx-auto flex">
           {/* <div className="w-1/2 p-6 flex flex-col items-center justify-center gap-3">
@@ -86,6 +94,60 @@ export const Resort = () => {
           </div>
         </div>
       </section>
+      <section className="w-full min-h-screen px-20">
+        <div className="flex flex-col w-full justify-center items-center gap-3">
+          <span
+            className={clsx(
+              arsenal.className,
+              "text-5xl text-[#1E5675] font-semibold uppercase"
+            )}
+          >
+            MẶT BẰNG NHÀ LIÊN KẾ
+          </span>
+          <div className="flex gap-2">
+            <div className="w-1/4">
+              <Image alt="mb1" src={mb1} />
+            </div>
+            <div className="w-1/4">
+              <Image alt="mb2" src={mb2} />
+            </div>
+            <div className="w-1/4">
+              <Image alt="mb3" src={mb3} />
+            </div>
+            <div className="w-1/4">
+              <Image alt="mb4" src={mb4} />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col w-full justify-center items-center gap-3">
+          <span
+            className={clsx(
+              arsenal.className,
+              "text-5xl text-[#1E5675] font-semibold uppercase mb-12 mt-24"
+            )}
+          >
+            MẶT BẰNG CĂN GỐC
+          </span>
+          <div className="flex gap-2">
+            <div className="w-1/4">
+              <Image alt="flat1" src={flat1} />
+            </div>
+            <div className="w-1/4">
+              <Image alt="flat2" src={flat2} />
+            </div>
+            <div className="w-1/4">
+              <Image alt="flat3" src={flat3} />
+            </div>
+            <div className="w-1/4">
+              <Image alt="flat4" src={flat4} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        style={{ backgroundSize: "8% auto" }}
+        className="w-full h-[250px] bg-[url('/static/images/leaft_left.png')] bg-bottom-left bg-no-repeat my-10"
+      ></section>
     </div>
   );
 };

@@ -29,9 +29,9 @@ export default function Home() {
       <Extention />
       <Club />
       <Resort />
-      <Spa />
+      {/* <Spa />
       <Testimonial />
-      <Exp />
+      <Exp /> */}
       <Infomation />
       <Footer />
     </>
