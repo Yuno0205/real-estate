@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Smooch, Arsenal } from "next/font/google";
 import React from "react";
-import vuonamthanh from "@/public/static/images/vuonamthanh.jpg";
+import park from "@/public/static/images/4spark.jpg";
 import Image from "next/image";
 
 const smooch = Smooch({
@@ -17,8 +17,12 @@ export const Extention = () => {
   return (
     <div
       style={{ backgroundSize: "10% auto" }}
-      className="py-[130px] w-full min-h-screen bg-[url('/static/images/bg.png')] bg-center"
+      className="py-[130px] w-full min-h-screen bg-[url('/static/images/bg.png')] bg-center relative"
     >
+      <div
+        style={{ backgroundSize: "10% auto" }}
+        className="absolute w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat"
+      ></div>
       <div className="max-w-[1140px] mx-auto ">
         <div className="w-full flex flex-col text-center mb-[84px]">
           <span
@@ -43,14 +47,14 @@ export const Extention = () => {
         </div>
         {/* Slider */}
         <div className="w-full text-center">
-          <Image alt="vuonamthanh" src={vuonamthanh} />
+          <Image alt="4spark" src={park} />
           <span
             className={clsx(
               "text-2xl text-[#6E6B6B] font-semibold",
               arsenal.className
             )}
           >
-            Vườn âm thanh
+            Vườn công viên 4 mùa
           </span>
         </div>
       </div>
