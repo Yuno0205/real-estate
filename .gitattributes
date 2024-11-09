@@ -1,3 +1,2 @@
-public/static/images/ad-video.mov filter=lfs diff=lfs merge=lfs -text
 public/images/ad-vid.mov filter=lfs diff=lfs merge=lfs -text
 public/images/ad-video.mov filter=lfs diff=lfs merge=lfs -text

@@ -120,7 +120,7 @@ export default function BlueZone() {
               onClick={() => setIsPlay(false)}
             >
               <ReactPlayer
-                url="/static/images/ad-video.mov"
+                url="https://www.youtube.com/watch?v=rVF_-RB69is"
                 height="60%"
                 playing
                 controls
