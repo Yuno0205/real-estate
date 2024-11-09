@@ -1,11 +1,3 @@
-import clsx from "clsx";
-import { Arsenal } from "next/font/google";
-
-const arsenal = Arsenal({
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "700"],
-});
-
 export const Club = () => {
   return (
     <section className="w-full bg-[url('/static/images/green_place.jpg')] bg-cover min-h-[861px] flex flex-col justify-between">
