@@ -5,7 +5,7 @@ import park from "@/public/static/images/4spark.jpg";
 import Image from "next/image";
 
 const smooch = Smooch({
-  subsets: ["vietnamese", "latin"],
+  subsets: ["vietnamese", "latin", "latin-ext"],
   weight: "400",
 });
 
