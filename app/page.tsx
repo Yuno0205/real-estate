@@ -12,6 +12,7 @@ import Overall from "./components/Overall";
 import { QandA } from "./components/Q&A";
 import { Resort } from "./components/Resort";
 import SaiGonRiver from "./components/SaiGonRiver";
+import Showcase from "./components/Showcase";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Club />
       <Resort />
       <QandA />
+      <Showcase />
       {/* <Spa />
       <Testimonial />
       <Exp /> */}

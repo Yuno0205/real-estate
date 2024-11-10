@@ -1,0 +1,12 @@
+.slick-slide {
+  transition: transform 0.3s ease;
+  padding: 0 4px; /* Khoảng cách giữa các item */
+  display: flex;
+  justify-content: center;
+}
+
+/* Điều chỉnh hình ảnh bên trong item */
+.slick-slide img {
+  max-width: 100%;
+  object-fit: cover;
+}
