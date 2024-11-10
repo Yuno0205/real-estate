@@ -1,19 +1,17 @@
 import Banner from "./components/Banner";
 import BlueZone from "./components/BlueZone";
 import { Club } from "./components/Club";
-import { Exp } from "./components/Exp";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
-import { Infomation } from "./components/Infomation";
+import { Footer } from "./components/Footer";
 import Header from "./components/Header";
+import { Infomation } from "./components/Infomation";
 import { Location } from "./components/Location";
 import { Offer } from "./components/Offer";
 import Overall from "./components/Overall";
+import { QandA } from "./components/Q&A";
 import { Resort } from "./components/Resort";
 import SaiGonRiver from "./components/SaiGonRiver";
-import { Spa } from "./components/Spa";
-import { Testimonial } from "./components/Testimonial";
-import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -29,6 +27,7 @@ export default function Home() {
       <Extention />
       <Club />
       <Resort />
+      <QandA />
       {/* <Spa />
       <Testimonial />
       <Exp /> */}
