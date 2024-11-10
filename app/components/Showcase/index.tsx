@@ -29,7 +29,7 @@ const Showcase = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <div className="w-full py-28">
         <div className="max-w-[1140px] mx-auto flex justify-center flex-col items-center">
           <span className={clsx(arsenal.className, "text-5xl uppercase")}>

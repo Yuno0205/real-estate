@@ -93,7 +93,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
+          className="ml-auto bg-[#FF7A59] text-white py-2 px-4 rounded-md hover:bg-orange-600 transition-colors"
         >
           Gửi Thông Tin
         </button>
