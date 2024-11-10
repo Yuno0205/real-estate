@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 import { Infomation } from "./components/Infomation";
 import { Location } from "./components/Location";
+import News from "./components/News";
 import { Offer } from "./components/Offer";
 import Overall from "./components/Overall";
 import { QandA } from "./components/Q&A";
@@ -30,6 +31,7 @@ export default function Home() {
       <Resort />
       <QandA />
       <Showcase />
+      <News />
       {/* <Spa />
       <Testimonial />
       <Exp /> */}
