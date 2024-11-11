@@ -52,8 +52,8 @@ export default function Banner() {
 
       {/* Main banner */}
       <div className="align-content: center mx-auto flex min-h-[1100px] w-full max-w-[1140px] items-center justify-center">
-        <div className="flex flex-col w-full items-center justify-center h-full">
-          <div className=" z-9 min-h-[450px] w-2/3">
+        <div className="flex flex-col w-full items-center justify-center h-full px-4">
+          <div className=" z-9 min-h-[450px] xs:w-full w-2/3 mx-auto">
             <div
               style={{ backgroundImage: "url(/static/images/leaft_left.png)" }}
               className="flex rounded-md bg-[#152624E6] bg-[length:34%_auto] bg-bottom bg-left bg-no-repeat p-[5rem] text-center transition-all duration-300"

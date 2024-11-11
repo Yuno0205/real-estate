@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <header>
+    <header className="w-full">
       <nav className="fixed top-0 z-10 left-0 right-0">
         <section className=" px-9 relative bg-[#506E4F]">
           <div className="flex items-center max-w-[1140px] mx-auto h-full  min-h-[70px] justify-between">
@@ -29,7 +29,7 @@ export default function Header() {
                 />
               </Link>
             </div> */}
-            <div className="w-3/4 hidden justify-end h-full lg:flex">
+            <div className="w-3/4 flex justify-end h-full md:hidden">
               <ul className="flex justify-end">
                 <li>
                   <Link
@@ -111,7 +111,7 @@ export default function Header() {
               </ul>
             </div>
             <div
-              className="text-white lg:hidden"
+              className="text-white hidden md:flex"
               onClick={() => setIsExpanded(!isExpanded)}
             >
               {isExpanded ? (
