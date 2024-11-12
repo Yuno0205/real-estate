@@ -30,7 +30,7 @@ export default function Home() {
       <Extention />
       <Club />
       <Resort />
-      {/* <QandA /> */}
+      <QandA />
       <Showcase />
       {/* <News /> */}
       {/* <Spa />
