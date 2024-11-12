@@ -18,7 +18,7 @@ export const QandA = () => {
   };
 
   return (
-    <section className="w-full min-h-screen min-h-1">
+    <section className="w-full min-h-screen min-h-1 flex md:flex-col">
       <div className="w-1/2 md:w-full flex 2xs:aspect-square">
         <Image
           src={city}

@@ -42,30 +42,32 @@ export default function Overall() {
         </div>
       </div>
 
-      <div className="flex bg-[#DFFDE8E5] xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10">
-        <div className="w-1/3 px-4 xs:w-full">
-          <div className="w-full">
-            <Image src={congvien1} alt="overall" className="object-cover" />
+      <div className="w-full bg-[#DFFDE8E5]">
+        <div className="flex xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10">
+          <div className="w-1/3 px-4 xs:w-full">
+            <div className="w-full">
+              <Image src={congvien1} alt="overall" className="object-cover" />
+            </div>
+            <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+              Hệ sinh thái vườn công viên ven sông
+            </span>
           </div>
-          <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Hệ sinh thái vườn công viên ven sông
-          </span>
-        </div>
-        <div className="w-1/3 px-4 xs:w-full">
-          <div>
-            <Image src={congvien2} alt="overall" />
+          <div className="w-1/3 px-4 xs:w-full">
+            <div>
+              <Image src={congvien2} alt="overall" />
+            </div>
+            <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+              Không gian sống cộng sinh cùng thiên nhiên
+            </span>
           </div>
-          <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Không gian sống cộng sinh cùng thiên nhiên
-          </span>
-        </div>
-        <div className="w-1/3 px-4 xs:w-full">
-          <div>
-            <Image src={congvien3} alt="overall" />
+          <div className="w-1/3 px-4 xs:w-full">
+            <div>
+              <Image src={congvien3} alt="overall" />
+            </div>
+            <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+              Chăm sóc sức khỏe chủ động
+            </span>
           </div>
-          <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Chăm sóc sức khỏe chủ động
-          </span>
         </div>
       </div>
 
