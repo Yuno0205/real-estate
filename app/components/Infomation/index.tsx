@@ -13,12 +13,12 @@ export const Infomation = () => {
       <div className="w-full h-full absolute bg-[#241526] opacity-80 top-0 left-0 z-0"></div>
 
       {/* Nội dung */}
-      <div className="max-w-[1140px] mx-auto relative z-5 flex gap-10">
-        <div className="w-2/5 px-4 flex flex-col">
+      <div className="max-w-[1140px] mx-auto relative z-5 flex gap-10 md:flex-col px-4">
+        <div className="w-2/5 px-4 flex flex-col md:w-full ">
           <h1
             className={clsx(
               arsenal.className,
-              "text-2xl text-white font-semibold mb-3"
+              "text-2xl text-white font-semibold mb-3 xs:text-center"
             )}
           >
             THÔNG TIN LIÊN HỆ
@@ -101,7 +101,7 @@ export const Infomation = () => {
             </ul>
           </div>
         </div>
-        <div className="w-3/5 flex flex-col">
+        <div className="w-3/5 flex flex-col md:w-full">
           <div className="w-full px-8 py-4 border-2 border-[#B5B2B2] rounded-xl text-center">
             <span
               className={clsx(

@@ -32,12 +32,12 @@ export default function Home() {
       <Resort />
       <QandA />
       <Showcase />
-      {/* <News /> */}
+      <News />
       {/* <Spa />
       <Testimonial />
       <Exp /> */}
-      {/* <Infomation />
-      <Footer /> */}
+      <Infomation />
+      <Footer />
     </>
   );
 }

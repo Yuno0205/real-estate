@@ -12,7 +12,7 @@ const arsenal = Arsenal({
 
 export const News = () => {
   return (
-    <div className="w-full py-32">
+    <div className="w-full py-32 xs:py-20">
       <div className="max-w-[1140px] mx-auto">
         <div className="w-full text-center flex flex-col gap-3 mb-12">
           <span className={clsx("text-5xl uppercase font-semibold")}>
@@ -27,8 +27,8 @@ export const News = () => {
             Cập nhật tin tức và sự kiện mở bán mới nhất của dự án Elite Life
           </span>
         </div>
-        <div className="w-full flex gap-3">
-          <div className="w-1/4 p-5 flex flex-col">
+        <div className="w-full flex gap-3 md:flex-wrap md:justify-center">
+          <div className="w-1/4 p-5 flex flex-col md:w-5/12 xs:w-full">
             <Image src={new1} alt="logo" className="rounded-lg mb-10" />
             <div className="mb-8">
               <div className="mb-5">
@@ -46,7 +46,7 @@ export const News = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/4 p-5 flex flex-col">
+          <div className="w-1/4 p-5 flex flex-col md:w-5/12 xs:w-full">
             <Image src={new1} alt="logo" className="rounded-lg mb-10" />
             <div className="mb-8">
               <div className="mb-5">
@@ -65,7 +65,7 @@ export const News = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/4 p-5 flex flex-col">
+          <div className="w-1/4 p-5 flex flex-col md:w-5/12 xs:w-full">
             <Image src={new1} alt="logo" className="rounded-lg mb-10" />
             <div className="mb-8">
               <div className="mb-5">
@@ -82,7 +82,7 @@ export const News = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/4 p-5 flex flex-col">
+          <div className="w-1/4 p-5 flex flex-col md:w-5/12 xs:w-full">
             <Image src={new1} alt="logo" className="rounded-lg mb-10" />
             <div className="mb-8">
               <div className="mb-5">
@@ -98,7 +98,7 @@ export const News = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-end">
+        <div className="w-full flex justify-end xs:justify-center">
           <div className="max-w-[300px] flex gap-3 bg-gradient-to-r from-[#395F2E] to-[#003F2D] py-4 px-5 rounded-lg text-white font-bold cursor-pointer">
             Xem thêm nhiều tin tức mới
             <ChevronRightIcon className="w-6 h-6" />

@@ -26,12 +26,38 @@ const Showcase = () => {
     slidesToScroll: 1,
     centerMode: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="w-full overflow-hidden">
-      <div className="w-full py-28">
-        <div className="max-w-[1140px] mx-auto flex justify-center flex-col items-center">
+      <div className="w-full py-28 xs:py-16">
+        <div className="max-w-[1140px] mx-auto flex justify-center flex-col items-center xs:text-center">
           <span className={clsx(arsenal.className, "text-5xl uppercase")}>
             Khách hàng Nhận nhà tại
           </span>
