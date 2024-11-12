@@ -17,7 +17,7 @@ export const Extention = () => {
   return (
     <div
       style={{ backgroundSize: "10% auto" }}
-      className="py-[130px] w-full min-h-screen bg-[url('/static/images/bg.png')] bg-center relative"
+      className="py-[130px] xs:py-[100px] w-full min-h-screen bg-[url('/static/images/bg.png')] bg-center relative"
     >
       <div
         style={{ backgroundSize: "10% auto" }}
