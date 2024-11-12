@@ -56,7 +56,7 @@ export default function Banner() {
           <div className=" z-9 min-h-[450px] xs:w-full w-2/3 mx-auto">
             <div
               style={{ backgroundImage: "url(/static/images/leaft_left.png)" }}
-              className="flex rounded-md bg-[#152624E6] bg-[length:34%_auto] bg-bottom bg-left bg-no-repeat p-[5rem] text-center transition-all duration-300"
+              className="flex rounded-md bg-[#152624E6] bg-[length:34%_auto] bg-bottom bg-left bg-no-repeat p-20 xs:px-6 xs:py-12 text-center transition-all duration-300"
             >
               {/* Content banner */}
               <div className={clsx("w-full text-center", roboto.className)}>
@@ -86,9 +86,12 @@ export default function Banner() {
                       textTransform: "uppercase",
                     }}
                   >
-                    <span className="pt-2 leading-10 text-6xl"> Chuẩn cho</span>
+                    <span className="pt-2 leading-10 text-6xl xs:text-5xl">
+                      {" "}
+                      Chuẩn cho
+                    </span>
                     <br />
-                    <span className="pt-2 leading-10 text-6xl">
+                    <span className="pt-2 leading-10 text-6xl xs:text-5xl">
                       cuộc sống ưu tú
                     </span>
                   </h1>

@@ -16,7 +16,7 @@ export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
     <header className="w-full">
-      <nav className="fixed top-0 z-10 left-0 right-0">
+      <nav className="fixed top-0 z-10 left-0 right-0 w-full">
         <section className=" px-9 relative bg-[#506E4F]">
           <div className="flex items-center max-w-[1140px] mx-auto h-full  min-h-[70px] justify-between">
             {/* <div className="w-1/6 px-4 py-2.5">
