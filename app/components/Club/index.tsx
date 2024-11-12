@@ -1,6 +1,6 @@
 export const Club = () => {
   return (
-    <section className="w-full bg-[url('/static/images/green_place.jpg')] bg-cover min-h-[861px] flex flex-col justify-between">
+    <section className="w-full bg-[url('/static/images/green_place.jpg')] bg-cover min-h-[861px] xs:min-h-[400px] flex flex-col justify-between">
       <div className="max-w-[1140px] mx-auto h-full">
         {/* <div className="w-full h-full flex flex-col justify-center items-center gap-3">
           <span className="text-4xl font-semibold text-[#1C80C5] uppercase mt-5">

@@ -9,14 +9,14 @@ export const Offer = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full max-w-[1140px] mx-auto px-12 py-14 bg-[#FF7A56] shadow-xl  tracking-wider mb-[-140px] z-2 relative">
-        <div className="flex gap-2">
-          <div className="flex w-1/4">
+        <div className="flex gap-2 md:flex-col">
+          <div className="flex w-1/4 md:w-full md:justify-center md:text-center">
             <div className="flex flex-col justify-center gap-2">
               <span>Kiến tạo chốn an bình bắt đàu bằng sự cân bằng !</span>
               <span className="text-2xl font-semibold">Chính thức mở bán</span>
             </div>
           </div>
-          <div className="flex w-1/2 flex-col gap-5">
+          <div className="flex w-1/2 flex-col gap-5 md:w-full">
             <ul className="list-none  tracking-wider">
               <li className="flex gap-2 py-3">
                 <svg
@@ -78,7 +78,7 @@ export const Offer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex w-1/4 justify-center items-center">
+          <div className="flex w-1/4 justify-center items-center md:w-full">
             <div>
               <div className="flex items-center gap-2 bg-[#ED7856] border-2 border-black px-10 py-4 cursor-pointer">
                 <div

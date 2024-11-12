@@ -26,10 +26,10 @@ const mont = Montserrat({
 export default function SaiGonRiver() {
   return (
     <div className="w-full h-full">
-      <div className="w-full max-w-[1140px] mx-auto pt-[167px] pb-[200px] flex px-3">
-        <div className="w-1/3 ">
-          <div className="w-full relative">
-            <div className="h-[1px] w-1/12 align-middle bg-[#bcbcbc] inline-block mb-4 absolute left-[-50px] top-4"></div>
+      <div className="w-full max-w-[1140px] mx-auto pt-[167px] pb-[200px] md:pt-[100px] md:pb-[100px] xs:pt-[60px] xs:pb-[60px] flex px-3 md:flex-col">
+        <div className="w-1/3 md:w-full">
+          <div className="w-full relative md:text-center">
+            <div className="h-[1px] w-1/12 align-middle bg-[#bcbcbc] inline-block mb-4 absolute left-[-50px] top-4 md:hidden"></div>
             <span
               className={clsx(
                 "text-3xl font-bold text-[#185822]",
@@ -41,7 +41,7 @@ export default function SaiGonRiver() {
             </span>
           </div>
           <div className={clsx("w-full text-justify py-5", inter.className)}>
-            <div className="w-11/12">
+            <div className="w-11/12 md:w-full">
               <p className={clsx("mb-6 leading-7")}>
                 <span className="text-[#008000] font-semibold">
                   Elite Life dự án nhà phố compound
@@ -60,7 +60,7 @@ export default function SaiGonRiver() {
             </div>
           </div>
 
-          <div className="w-11/12 mt-5">
+          <div className="w-11/12 mt-5 md:w-full">
             <div className="text-justify font-medium leading-6 text-[#232323] border-solid border-l-4 border-[#FF7A56] py-1 pl-8">
               <p
                 className={clsx("mb-5 text-justify leading-6", prata.className)}
@@ -80,14 +80,14 @@ export default function SaiGonRiver() {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex items-center p-4">
+        <div className="w-1/2 flex items-center p-4 md:w-full">
           <Image
             src={img}
             alt="img"
             className="rounded-lg object-cover h-4/5"
           />
         </div>
-        <div className="flex flex-1 flex-col justify-around">
+        <div className="flex flex-1 flex-col justify-around md:text-center">
           {/* Items */}
           <div className="flex flex-col pl-4 py-4 border-b border-[#939393]">
             <div className="mb-2.5">

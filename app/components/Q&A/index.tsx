@@ -18,17 +18,17 @@ export const QandA = () => {
   };
 
   return (
-    <section className="w-full min-h-screen flex">
-      <div className="w-1/2">
+    <section className="w-full min-h-screen min-h-1 flex md:flex-col">
+      <div className="w-1/2 md:w-full flex 2xs:aspect-square">
         <Image
           src={city}
           alt="city"
           className="object-cover h-full transition duration-300 ease-in"
         />
       </div>
-      <div className="w-1/2 flex flex-col bg-[#241526] px-32 py-28 ">
+      <div className="w-1/2 md:w-full flex flex-col bg-[#241526] px-32 py-28 md:p-20 xs:px-8">
         <span className="text-[#FF7A56]">HỎI ĐÁP (Q & A)</span>
-        <span className="text-white leading-8 pr-4 py-5">
+        <span className="text-white leading-8 pr-4 py-5 ">
           Là một dự án mới mang tính tiên phong cho xu hướng kiến trúc cộng sinh
           tại khu Nam Sài Gòn chúng tôi hiểu rằng quý khách hàng và nhà đầu tư
           sẽ có rất nhiều câu hỏi về dự án này. Dưới đây là một số câu hỏi và
@@ -43,7 +43,7 @@ export const QandA = () => {
               }`}
               onClick={() => toggleItem("item-1")}
             >
-              <AccordionTrigger className="pl-12 pr-6 pb-4 pt-8 hover:no-underline leading-8">
+              <AccordionTrigger className="pl-12 xs:pl-6 pr-6 pb-4 pt-8 hover:no-underline leading-8">
                 An ninh trong khu biệt thự được quản lý ra sao khi phân khu này
                 đi vào hoạt động?
               </AccordionTrigger>
@@ -63,7 +63,7 @@ export const QandA = () => {
               }`}
               onClick={() => toggleItem("item-2")}
             >
-              <AccordionTrigger className="pl-12 pr-6 pb-4 pt-8 hover:no-underline leading-8">
+              <AccordionTrigger className="pl-12 xs:pl-6 pr-6 pb-4 pt-8 hover:no-underline leading-8">
                 Khu biệt thự nhiều cây xanh thì hệ thống đèn chiếu sáng sẽ hoạt
                 động trong thời gian cố định nào, camera bảo vệ đặt ở những đâu?
                 Có mấy chốt bảo vệ?
@@ -84,7 +84,7 @@ export const QandA = () => {
               }`}
               onClick={() => toggleItem("item-3")}
             >
-              <AccordionTrigger className="pl-12 pr-6 pb-4 pt-8 hover:no-underline leading-8">
+              <AccordionTrigger className="pl-12 xs:pl-6 pr-6 pb-4 pt-8 hover:no-underline leading-8">
                 Khu vực Onsen 15.000m2 những ai được sử dụng dịch vụ, Cư dân có
                 được sử dụng hay không? Phí dự kiến nếu Cư dân sử dụng?
               </AccordionTrigger>
@@ -104,7 +104,7 @@ export const QandA = () => {
               }`}
               onClick={() => toggleItem("item-4")}
             >
-              <AccordionTrigger className="pl-12 pr-6 pb-4 pt-8 hover:no-underline leading-8">
+              <AccordionTrigger className="pl-12 xs:pl-6 pr-6 pb-4 pt-8 hover:no-underline leading-8">
                 Khách hàng có được neo đậu du thuyền cá nhân trước villas hay
                 không?
               </AccordionTrigger>

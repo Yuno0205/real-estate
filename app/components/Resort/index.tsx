@@ -24,10 +24,10 @@ export const Resort = () => {
     <div className="w-full h-full min-h-screen">
       <section
         style={{ backgroundSize: "13% auto" }}
-        className="w-full  h-[300px] bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat"
+        className="w-full  h-[300px] bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat xs:bg-cover"
       >
         <div className="max-w-[1140px] mx-auto flex mt-auto h-full items-end">
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full px-4">
             <h2>
               <span
                 className={clsx(
@@ -55,9 +55,10 @@ export const Resort = () => {
           </div>
         </div>
       </section>
+
       <section
         style={{ backgroundSize: "12% auto" }}
-        className="w-full h-full  my-[104px]"
+        className="w-full h-full  my-[104px] xs:my-[50px]"
       >
         <div className="max-w-[1140px] mx-auto flex">
           {/* <div className="w-1/2 p-6 flex flex-col items-center justify-center gap-3">
@@ -94,7 +95,8 @@ export const Resort = () => {
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen px-20">
+
+      <section className="w-full min-h-screen px-20 xs:px-5 text-center">
         <div className="flex flex-col w-full justify-center items-center gap-3">
           <span
             className={clsx(
@@ -104,17 +106,17 @@ export const Resort = () => {
           >
             MẶT BẰNG NHÀ LIÊN KẾ
           </span>
-          <div className="flex gap-2">
-            <div className="w-1/4">
+          <div className="flex gap-2 md:flex-wrap md:justify-between">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="mb1" src={mb1} />
             </div>
-            <div className="w-1/4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="mb2" src={mb2} />
             </div>
-            <div className="w-1/4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="mb3" src={mb3} />
             </div>
-            <div className="w-1/4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="mb4" src={mb4} />
             </div>
           </div>
@@ -128,17 +130,17 @@ export const Resort = () => {
           >
             MẶT BẰNG CĂN GỐC
           </span>
-          <div className="flex gap-2">
-            <div className="w-1/4">
+          <div className="flex gap-2 md:flex-wrap md:justify-between xs:gap-4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="flat1" src={flat1} />
             </div>
-            <div className="w-1/4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="flat2" src={flat2} />
             </div>
-            <div className="w-1/4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="flat3" src={flat3} />
             </div>
-            <div className="w-1/4">
+            <div className="w-1/4 md:w-2/5 xs:w-full">
               <Image alt="flat4" src={flat4} />
             </div>
           </div>
@@ -146,7 +148,7 @@ export const Resort = () => {
       </section>
       <section
         style={{ backgroundSize: "8% auto" }}
-        className="w-full h-[250px] bg-[url('/static/images/leaft_left.png')] bg-bottom-left bg-no-repeat my-10"
+        className="w-full h-[250px] md:h-[100px] bg-[url('/static/images/leaft_left.png')] bg-bottom-left bg-no-repeat my-10"
       ></section>
     </div>
   );

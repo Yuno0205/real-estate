@@ -22,7 +22,7 @@ const roboto = Roboto({
 });
 export default function Overall() {
   return (
-    <>
+    <div className="w-full">
       <div className="py-[60px] bg-[#DFFDE8]">
         <div className="text-center gap-2 flex flex-col">
           <h2
@@ -40,30 +40,33 @@ export default function Overall() {
           </span>
         </div>
       </div>
-      <div className="flex bg-[#DFFDE8E5]">
-        <div className="w-1/3 px-4">
-          <div>
-            <Image src={congvien1} alt="overall" className="object-cover" />
+
+      <div className="w-full bg-[#DFFDE8E5]">
+        <div className="flex xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10">
+          <div className="w-1/3 px-4 xs:w-full">
+            <div className="w-full">
+              <Image src={congvien1} alt="overall" className="object-cover" />
+            </div>
+            <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+              Hệ sinh thái vườn công viên ven sông
+            </span>
           </div>
-          <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Hệ sinh thái vườn công viên ven sông
-          </span>
-        </div>
-        <div className="w-1/3 px-4">
-          <div>
-            <Image src={congvien2} alt="overall" />
+          <div className="w-1/3 px-4 xs:w-full">
+            <div>
+              <Image src={congvien2} alt="overall" />
+            </div>
+            <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+              Không gian sống cộng sinh cùng thiên nhiên
+            </span>
           </div>
-          <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Không gian sống cộng sinh cùng thiên nhiên
-          </span>
-        </div>
-        <div className="w-1/3 px-4">
-          <div>
-            <Image src={congvien3} alt="overall" />
+          <div className="w-1/3 px-4 xs:w-full">
+            <div>
+              <Image src={congvien3} alt="overall" />
+            </div>
+            <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+              Chăm sóc sức khỏe chủ động
+            </span>
           </div>
-          <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-            Chăm sóc sức khỏe chủ động
-          </span>
         </div>
       </div>
 
@@ -71,15 +74,15 @@ export default function Overall() {
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-[#DFFDE8E5] to-[#F3F3F3] pointer-events-none"></div>
         <div className="absolute inset-0 w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-bottom bg-no-repeat bg-[20%_auto] opacity-50 pointer-events-none"></div>
 
-        <div className="relative flex z-2">
-          <div className="w-3/4 object-cover">
+        <div className="relative flex z-2 md:flex-col md:px-4">
+          <div className="w-3/4 object-cover md:w-full">
             <Image
               src={factory}
               alt="matdoxaydung"
               className="rounded-xl object-cover"
             />
           </div>
-          <div className="w-1/4 flex">
+          <div className="w-1/4 flex md:w-full">
             <div className="w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat bg-[56%_auto] px-5 flex flex-col relative justify-center">
               <div className="mb-5">
                 <h5 className="text-left">
@@ -205,6 +208,6 @@ export default function Overall() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -22,6 +22,7 @@ export default function Home() {
       <Banner />
       <BlueZone />
       <Overall />
+
       <SaiGonRiver />
       <Offer />
       <Feature />

@@ -15,19 +15,19 @@ export const Feature = () => {
     <>
       <div
         style={{ backgroundSize: "10% auto" }}
-        className="w-full pb-[110px] pt-[250px] justify-center bg-[#F7F7F7] bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat"
+        className="w-full pb-[110px] pt-[250px]  xs:pb-[50px] justify-center bg-[#F7F7F7] bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat"
       >
-        <div className="flex w-2/3 flex-col mx-auto gap-2">
+        <div className="flex w-2/3 flex-col mx-auto gap-2 xs:w-full px-4">
           <span className="text-2xl leading-8 text-[#395F2E] text-center font-semibold">
             NHÀ SÁNG LẬP ELITE LIFE KIẾN TẠO NHỮNG NGÔI NHÀ
           </span>
-          <h5 className="text-start pl-16">
+          <h5 className="text-start pl-16 md:pl-4">
             <span className="text-[#395F5C] text-3xl">Không chỉ </span>
             <span className="text-[#FF860D] text-3xl font-bold">
               sống thư giãn và tiện nghi
             </span>
           </h5>
-          <h5 className="text-end pr-16">
+          <h5 className="text-end pr-16 md:pr-4">
             <span className="text-[#395F5C] text-3xl">mà còn </span>
             <span className="text-[#FF860D] text-3xl font-semibold">
               sống vượt trội và khác biệt
@@ -44,9 +44,9 @@ export const Feature = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#F7F7F7] pb-[160px]">
-        <div className="flex max-w-[1140px] mx-auto  gap-4">
-          <div className="p-14 flex flex-col w-full sm:w-1/2 lg:w-1/3 bg-white rounded-xl">
+      <div className="w-full bg-[#F7F7F7] pb-[160px] xs:pb-[100px]">
+        <div className="flex max-w-[1140px] mx-auto md:flex-wrap gap-4 justify-center px-4">
+          <div className="p-14 flex flex-col xs:w-full md:w-2/5 w-1/3 bg-white rounded-xl">
             <div className="mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ export const Feature = () => {
               chở, vừa giữ độ ẩm lý tưởng.
             </span>
           </div>
-          <div className="p-14 flex flex-col w-full sm:w-1/2 lg:w-1/3 bg-white rounded-xl">
+          <div className="p-14 flex flex-col xs:w-full md:w-2/5 w-1/3 bg-white rounded-xl">
             <div className="mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ export const Feature = () => {
               nhiên vừa giữ riêng tư, vừa đủ để kết nối với xóm giềng.
             </span>
           </div>
-          <div className="p-14 flex flex-col w-full sm:w-1/2 lg:w-1/3 bg-white rounded-xl">
+          <div className="p-14 flex flex-col xs:w-full md:w-2/5 w-1/3 bg-white rounded-xl">
             <div className="mb-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

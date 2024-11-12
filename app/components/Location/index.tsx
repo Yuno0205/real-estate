@@ -72,8 +72,8 @@ export const Location = () => {
           className="object-cover rounded-lg"
         />
       </section> */}
-      <section className="my-[85px] max-w-[1140px] mx-auto flex">
-        <div className="w-1/2 px-4 flex flex-col justify-center items-center">
+      <section className="my-[85px] max-w-[1140px] mx-auto flex xs:flex-col">
+        <div className="w-1/2 px-4 flex flex-col justify-center items-center xs:w-full xs:text-center">
           <span
             className={clsx(
               "text-3xl uppercase text-[#0C4E93]",
@@ -108,7 +108,7 @@ export const Location = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 px-4 border border-[#000] rounded ">
+        <div className="w-1/2 px-4 border border-[#000] rounded xs:w-full">
           <Image
             alt="location"
             src={location}
@@ -117,20 +117,21 @@ export const Location = () => {
           />
         </div>
       </section>
+
       <div
         style={{ backgroundSize: "10% auto" }}
         className="w-full bg-[url(/static/images/leaft_right.png)] bg-right-top bg-no-repeat relative"
       >
         {/* <div className="absolute top-0 left-0 w-full h-full bg-[url(/static/images/leaft_right.png)] bg-no-repeat bg-right-top"></div> */}
-        <section className="max-w-[1140px] mx-auto flex gap-8">
-          <div className="w-2/3 px-4">
+        <section className="max-w-[1140px] mx-auto flex gap-8 xs:flex-col">
+          <div className="w-2/3 px-4 xs:w-full">
             <Image
               alt="location2"
               src={location2}
               className="object-cover rounded-xl"
             />
           </div>
-          <div className="w-1/3 px-4 relative">
+          <div className="w-1/3 px-4 relative xs:w-full">
             <div className="pb-8 pt-16 px-3">
               <span
                 className={clsx(
