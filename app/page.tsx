@@ -25,7 +25,7 @@ export default function Home() {
 
       <SaiGonRiver />
       <Offer />
-      {/* <Feature />     */}
+      <Feature />
       {/* <Location /> */}
       {/* <Extention /> */}
       <Club />
