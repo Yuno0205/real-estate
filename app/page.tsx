@@ -21,17 +21,18 @@ export default function Home() {
       <Header />
       <Banner />
       <BlueZone />
-      {/* <Overall /> */}
+      <Overall />
+
       <SaiGonRiver />
-      <Offer />
+      {/* <Offer /> */}
       {/* <Feature />     */}
       {/* <Location /> */}
-      <Extention />
+      {/* <Extention /> */}
       <Club />
       <Resort />
       {/* <QandA /> */}
       <Showcase />
-      <News />
+      {/* <News /> */}
       {/* <Spa />
       <Testimonial />
       <Exp /> */}
