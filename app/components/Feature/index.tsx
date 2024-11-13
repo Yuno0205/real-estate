@@ -69,9 +69,9 @@ export const Feature = () => {
                 "tracking-widest text-justify pb-3"
               )}
             >
-              Khoảng xanh rộng lớn bao quanh cùng địa hình ba mặt đều giáp sông,
-              rạch đưa 5ha dòng chảy mặt nước tự nhiên len lỏi khắp nội khu, tạo
-              cho Blue Forest một vùng vi khí hậu hoàn hảo, vừa có bóng mát che
+              Khoảng xanh rộng lớn bao quanh cùng địa hình một mặt giáp sông,
+              bên sông lại và công viên cây xanh nhưng cơn gió tự nhiên len lỏi
+              cho Elite Life tạo một vùng khí hậu hoàn hảo, vừa có bóng mát che
               chở, vừa giữ độ ẩm lý tưởng.
             </span>
           </div>
@@ -98,9 +98,9 @@ export const Feature = () => {
                 "tracking-widest text-justify pb-3"
               )}
             >
-              Thay cho hàng rào ngăn cách, cư dân trong khu compound Elite Life,
-              chuồng &quot;ráo xanh&quot; bằng cây cối, tạo thành ranh giới tự
-              nhiên vừa giữ riêng tư, vừa đủ để kết nối với xóm giềng.
+              Thay cho hàng rào ngăn cách, cư dân trong khu compound Elite Life
+              chuồng "rào xanh" bằng cây cối, tạo thành ranh giới tự nhiên vừa
+              đủ riêng tư, vừa đủ để kết nối với xóm giềng.
             </span>
           </div>
           <div className="p-14 flex flex-col xs:w-full md:w-2/5 w-1/3 bg-white rounded-xl">
@@ -132,7 +132,7 @@ export const Feature = () => {
               )}
             >
               Không chỉ mở rộng diện tích phủ xanh, Elite Life còn làm dày thêm
-              khoảng xanh bằng việc giữ lại nét riêng với rặng dừa nước bên sông
+              khoảng xanh bằng việc giữ lại nét riêng với rạn đùa nước bên sông
               dan xen với cây xanh, đem lại cảnh vật thiên nhiên tự nhiên.
             </span>
           </div>
