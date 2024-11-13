@@ -99,8 +99,8 @@ export const Feature = () => {
               )}
             >
               Thay cho hàng rào ngăn cách, cư dân trong khu compound Elite Life
-              chuồng "rào xanh" bằng cây cối, tạo thành ranh giới tự nhiên vừa
-              đủ riêng tư, vừa đủ để kết nối với xóm giềng.
+              chuồng &quot;rào xanh&quot; bằng cây cối, tạo thành ranh giới tự
+              nhiên vừa đủ riêng tư, vừa đủ để kết nối với xóm giềng.
             </span>
           </div>
           <div className="p-14 flex flex-col xs:w-full md:w-2/5 w-1/3 bg-white rounded-xl">
