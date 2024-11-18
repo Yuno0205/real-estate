@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import BlueZone from "./components/BlueZone";
+import FacebookChat from "./components/ChatBot";
 import { Club } from "./components/Club";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
@@ -22,7 +23,6 @@ export default function Home() {
       <Banner />
       <BlueZone />
       <Overall />
-
       <SaiGonRiver />
       <Offer />
       <Feature />
@@ -38,6 +38,7 @@ export default function Home() {
       <Exp /> */}
       <Infomation />
       <Footer />
+      <FacebookChat />
     </>
   );
 }
