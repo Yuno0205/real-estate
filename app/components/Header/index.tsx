@@ -48,7 +48,7 @@ export default function Header() {
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
                       playfair.className
                     )}
-                    href={"/about"}
+                    href={"/"}
                   >
                     Tổng quan
                   </Link>
@@ -59,7 +59,7 @@ export default function Header() {
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
                       playfair.className
                     )}
-                    href={"/contact"}
+                    href={"/"}
                   >
                     Vị trí
                   </Link>
@@ -70,7 +70,7 @@ export default function Header() {
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
                       playfair.className
                     )}
-                    href={"/contact"}
+                    href={"/"}
                   >
                     Tiện ích
                   </Link>
@@ -81,7 +81,7 @@ export default function Header() {
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
                       playfair.className
                     )}
-                    href={"/contact"}
+                    href={"/"}
                   >
                     Phân khu
                   </Link>
@@ -92,7 +92,7 @@ export default function Header() {
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
                       playfair.className
                     )}
-                    href={"/contact"}
+                    href={"/"}
                   >
                     Tin tức
                   </Link>
@@ -103,7 +103,7 @@ export default function Header() {
                       "text-white uppercase mx-5 font-semibold py-6 text-sm",
                       playfair.className
                     )}
-                    href={"/contact"}
+                    href={"/"}
                   >
                     Liên hệ
                   </Link>
