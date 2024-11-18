@@ -17,7 +17,7 @@ export default function BlueZone() {
     setIsFetch(true);
   }, []);
   return (
-    <div className="min-h-[800px] bg-[url('/static/images/sea.png')] bg-cover bg-center bg-no-repeat py-[160px] bg-[#D4FEC8]">
+    <div className="min-h-[800px] bg-[url('/static/images/sea.png')] bg-cover bg-center bg-local bg-no-repeat py-[160px] bg-[#D4FEC8]">
       <div className="relative mx-auto flex min-h-[300px] max-w-[1140px] justify-center">
         <div className="flex min-h-1 w-2/3 flex-col items-center relative 2xs:w-full 2xs:px-4">
           {/* Play button */}
