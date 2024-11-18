@@ -6,7 +6,7 @@ export const Footer = () => {
           {/* <Image src={logo} alt="logo" className="object-cover" /> */}
         </div>
         <div className="w-3/4 text-end xs:w-full xs:text-center">
-          <span className="">Sở hữu bởi Cty Saigon Luxury.</span>
+          {/* Belong to */}
         </div>
       </div>
     </footer>
