@@ -7,6 +7,7 @@ import { Playfair_Display } from "next/font/google";
 import clsx from "clsx";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { FacebookProvider, CustomChat } from "react-facebook";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -16,6 +17,14 @@ export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
     <header className="w-full">
+      <FacebookProvider appId="552946714013365">
+        <CustomChat
+          pageId="462431816958415"
+          minimized
+          loggedInGreeting="Chào bạn! Tôi có thể giúp gì cho bạn?"
+          loggedOutGreeting="Vui lòng đăng nhập Facebook để trò chuyện với chúng tôi."
+        />
+      </FacebookProvider>
       <nav className="fixed top-0 z-10 left-0 right-0 w-full">
         <section className=" px-9 relative bg-[#506E4F]">
           <div className="flex items-center max-w-[1140px] mx-auto h-full  min-h-[70px] justify-between">
