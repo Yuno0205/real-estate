@@ -1,6 +1,5 @@
 import Banner from "./components/Banner";
 import BlueZone from "./components/BlueZone";
-import ChatBot from "./components/ChatBot";
 import { Club } from "./components/Club";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
