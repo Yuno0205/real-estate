@@ -4,7 +4,7 @@ import { FacebookProvider, CustomChat } from "react-facebook";
 
 function ChatBot() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full">
       <FacebookProvider appId="552946714013365">
         <CustomChat
           pageId="462431816958415"
