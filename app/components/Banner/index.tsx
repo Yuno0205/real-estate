@@ -1,8 +1,6 @@
-import { Roboto, Arsenal } from "next/font/google";
+import { fetchBanner } from "@/lib/contentful";
 import clsx from "clsx";
-import { client, fetchBanner } from "@/lib/contentful";
-import { useState } from "react";
-import { BannerFields } from "@/types/contentful";
+import { Arsenal, Roboto } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin", "vietnamese"],
@@ -19,9 +17,6 @@ export default async function Banner() {
 
   const backgroundImage = banner.backgroundImage;
   const title = banner.title;
-  const subtitle = banner.subtitle;
-  const ctaText = banner.ctaText;
-  const ctaLink = banner.ctaLink;
 
   return (
     <section

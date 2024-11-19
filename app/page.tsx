@@ -27,7 +27,7 @@ export default function Home() {
       <Feature />
       <Location />
       <Extention />
-      {/* <Club /> */}
+      <Club />
       <Resort />
       <QandA />
       <Showcase />
