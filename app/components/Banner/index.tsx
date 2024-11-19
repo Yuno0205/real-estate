@@ -1,5 +1,8 @@
 import { Roboto, Arsenal } from "next/font/google";
 import clsx from "clsx";
+import { client, fetchBanner } from "@/lib/contentful";
+import { useState } from "react";
+import { BannerFields } from "@/types/contentful";
 
 const roboto = Roboto({
   subsets: ["latin", "vietnamese"],
@@ -10,11 +13,20 @@ const arsenal = Arsenal({
   subsets: ["latin", "vietnamese"],
   weight: ["400", "700"],
 });
-export default function Banner() {
+export default async function Banner() {
+  const bannerData = await fetchBanner();
+  const banner = bannerData.items[0].fields;
+
+  const backgroundImage = banner.backgroundImage;
+  const title = banner.title;
+  const subtitle = banner.subtitle;
+  const ctaText = banner.ctaText;
+  const ctaLink = banner.ctaLink;
+
   return (
     <section
       style={{
-        backgroundImage: "url(/static/images/bg-rs.jpg)",
+        backgroundImage: `url(${backgroundImage?.fields?.file.url})`,
       }}
       className="relative min-h-screen bg-cover bg-center bg-no-repeat object-cover w-full"
     >
@@ -67,7 +79,7 @@ export default function Banner() {
                       "text-4xl tracking-[3px] text-[#E7DCD8]"
                     )}
                   >
-                    ELITE LIFE
+                    {title}
                   </span>
                 </div>
 
