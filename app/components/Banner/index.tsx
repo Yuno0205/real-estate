@@ -15,8 +15,7 @@ export default async function Banner() {
   const bannerData = await fetchBanner();
   const banner = bannerData.items[0].fields;
 
-  const backgroundImage = banner.backgroundImage;
-  const title = banner.title;
+  const { backgroundImage, title, subtitle, ctaText, ctaLink } = banner;
 
   return (
     <section
