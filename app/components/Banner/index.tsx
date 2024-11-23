@@ -1,4 +1,5 @@
 import { fetchBanner } from "@/lib/contentful";
+import { BannerFields } from "@/types/contentful";
 import clsx from "clsx";
 import { Arsenal, Roboto } from "next/font/google";
 
@@ -13,14 +14,17 @@ const arsenal = Arsenal({
 });
 export default async function Banner() {
   const bannerData = await fetchBanner();
-  const banner = bannerData.items[0].fields;
+  const banner = bannerData.items[0].fields as BannerFields;
 
-  const { backgroundImage, title, subtitle, ctaText, ctaLink } = banner;
+  const { backgroundImage, title, subtitle, ctaText } = banner;
+
+  console.log(banner.subtitle.substring(0, 10));
+  console.log(banner.subtitle.substring(10));
 
   return (
     <section
       style={{
-        backgroundImage: `url(${backgroundImage?.fields?.file.url})`,
+        backgroundImage: `url(${backgroundImage?.fields?.file?.url || ""})`,
       }}
       className="relative min-h-screen bg-cover bg-center bg-no-repeat object-cover w-full"
     >
@@ -94,11 +98,11 @@ export default async function Banner() {
                   >
                     <span className="pt-2 leading-10 text-6xl xs:text-5xl">
                       {" "}
-                      Chuẩn cho
+                      {subtitle.substring(0, 10)}
                     </span>
                     <br />
                     <span className="pt-2 leading-10 text-6xl xs:text-5xl">
-                      cuộc sống ưu tú
+                      {subtitle.substring(10)}
                     </span>
                   </h1>
                 </div>
@@ -119,7 +123,7 @@ export default async function Banner() {
                   "text-sm font-semibold uppercase text-white cursor-pointer"
                 )}
               >
-                Đăng ký tư vấn
+                {ctaText}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
