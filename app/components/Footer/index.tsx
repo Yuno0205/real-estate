@@ -5,9 +5,7 @@ export const Footer = () => {
         <div className="w-1/4 px-4 xs:hidden">
           {/* <Image src={logo} alt="logo" className="object-cover" /> */}
         </div>
-        <div className="w-3/4 text-end xs:w-full xs:text-center">
-          <span className="">Sở hữu bởi Cty Saigon Luxury.</span>
-        </div>
+        <div className="w-3/4 text-end xs:w-full xs:text-center"></div>
       </div>
     </footer>
   );
