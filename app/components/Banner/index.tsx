@@ -18,9 +18,6 @@ export default async function Banner() {
 
   const { backgroundImage, title, subtitle, ctaText } = banner;
 
-  console.log(banner.subtitle.substring(0, 10));
-  console.log(banner.subtitle.substring(10));
-
   return (
     <section
       style={{
