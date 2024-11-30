@@ -1,7 +1,8 @@
 "use client";
+import { BlueZoneFields } from "@/types/contentful";
 import clsx from "clsx";
 import { Calistoga } from "next/font/google";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ReactPlayer from "react-player";
 
 const calistoga = Calistoga({
@@ -9,13 +10,9 @@ const calistoga = Calistoga({
   weight: "400",
 });
 
-export default function BlueZone() {
-  const [isFetch, setIsFetch] = useState(false);
+export default function BlueZone({ data }: { data: BlueZoneFields }) {
   const [isPlay, setIsPlay] = useState(false);
 
-  useEffect(() => {
-    setIsFetch(true);
-  }, []);
   return (
     <div className="min-h-[800px] bg-[url('/static/images/sea.png')] bg-cover bg-center bg-no-repeat py-[160px] bg-[#D4FEC8]">
       <div className="relative mx-auto flex min-h-[300px] max-w-[1140px] justify-center">
@@ -58,9 +55,9 @@ export default function BlueZone() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              <span className="pb-4">KIẾN TRÚC XANH</span>
+              <span className="pb-4">{data.title1} </span>
               <br />
-              <span className="mt-4"> CHUẨN CHO CUỘC SỐNG ƯU TÚ</span>
+              <span className="mt-4"> {data.title2}</span>
             </h2>
           </div>
 
@@ -89,11 +86,7 @@ export default function BlueZone() {
                 />
               </svg>
               <span className="font-semibold text-[#25436E]">
-                Kiến trúc xanh là một phong cách thiết kế tập trung vào việc
-                tích hợp hài hòa giữa con người và thiên nhiên. Thay vì tác động
-                tiêu cực đến thiên nhiên, phong cách này cố gắng làm sao để các
-                công trình xây dựng và cảnh quan xung quanh tương hỗ lẫn nhau,
-                cùng tồn tại và phát triển
+                {data.content}
               </span>
             </div>
           </div>
@@ -111,7 +104,7 @@ export default function BlueZone() {
             </p>
           </div> */}
 
-          {isFetch && isPlay && (
+          {isPlay && (
             <div
               className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
               onClick={() => setIsPlay(false)}
