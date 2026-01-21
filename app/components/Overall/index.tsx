@@ -46,13 +46,14 @@ export default async function Overall() {
         <div className="flex xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10">
           {data.slides.map((item: any, index: number) => (
             <div className="w-1/3 px-4 xs:w-full" key={index}>
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src={`https:${item.fields?.file?.url}`}
                   alt="overall"
                   className="object-cover"
-                  width={500}
-                  height={300}
+                  fill
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC"
                 />
               </div>
               <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
