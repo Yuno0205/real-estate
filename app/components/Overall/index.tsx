@@ -1,7 +1,5 @@
-import { fetchContentfulData } from "@/lib/contentful";
 import clsx from "clsx";
 import { Arsenal, Pinyon_Script, Roboto } from "next/font/google";
-import Image from "next/image";
 
 const arsenal = Arsenal({
   subsets: ["vietnamese"],
@@ -18,10 +16,6 @@ const roboto = Roboto({
   weight: ["400", "500", "700"],
 });
 export default async function Overall() {
-  const res = await fetchContentfulData("overal");
-  const data = res.items[0].fields as any;
-  console.log(data);
-
   return (
     <div className="w-full">
       <div className="py-[60px] bg-[#DFFDE8]">
@@ -32,19 +26,19 @@ export default async function Overall() {
               arsenal.className
             )}
           >
-            {data.title1}
+            title 1
           </h2>
           <span
             className={clsx("text-6xl mt-3 text-[#3F737B]", pinyon.className)}
           >
-            {data.title2}
+            title 2
           </span>
         </div>
       </div>
 
       <div className="w-full bg-[#DFFDE8E5]">
         <div className="flex xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10">
-          {data.slides.map((item: any, index: number) => (
+          {/* {data.slides.map((item: any, index: number) => (
             <div className="w-1/3 px-4 xs:w-full" key={index}>
               <div className="w-full relative">
                 <Image
@@ -60,7 +54,7 @@ export default async function Overall() {
                 {item.fields?.title}
               </span>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
 
@@ -70,12 +64,12 @@ export default async function Overall() {
 
         <div className="relative flex z-2 md:flex-col md:px-4">
           <div className="w-3/4 object-cover md:w-full relative">
-            <Image
+            {/* <Image
               src={`https:${data.mainImage.fields?.file?.url}`}
               fill
               alt={data.mainImage.fields?.title}
               className="rounded-xl object-cover"
-            />
+            /> */}
           </div>
           <div className="w-1/4 flex md:w-full">
             <div className="w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat bg-[56%_auto] px-5 flex flex-col relative justify-center">
@@ -87,7 +81,7 @@ export default async function Overall() {
                       arsenal.className
                     )}
                   >
-                    {data.textbold1}{" "}
+                    textbold 1{" "}
                   </span>
                   <span
                     className={clsx(
@@ -119,8 +113,7 @@ export default async function Overall() {
                       roboto.className
                     )}
                   >
-                    {data.textbold2}
-                    <sup className="text-[#30676E] text-3xl">2</sup>
+                    textbold 2<sup className="text-[#30676E] text-3xl">2</sup>
                   </span>
                   <span
                     className={clsx(
@@ -150,7 +143,7 @@ export default async function Overall() {
                   arsenal.className
                 )}
               >
-                {data.highlight.map((item: any, index: number) => (
+                {/* {data.highlight.map((item: any, index: number) => (
                   <li
                     className="pl-2.5 py-2 rounded-xl hover:bg-[#9edbde]"
                     key={index}
@@ -166,7 +159,7 @@ export default async function Overall() {
                       {item.value}
                     </span>
                   </li>
-                ))}
+                ))} */}
               </ol>
             </div>
           </div>

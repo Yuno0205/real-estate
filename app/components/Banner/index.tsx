@@ -1,5 +1,3 @@
-import { fetchBanner } from "@/lib/contentful";
-import { BannerFields } from "@/types/contentful";
 import clsx from "clsx";
 import { Arsenal, Roboto } from "next/font/google";
 
@@ -13,16 +11,11 @@ const arsenal = Arsenal({
   weight: ["400", "700"],
 });
 export default async function Banner() {
-  const bannerData = await fetchBanner();
-  const banner = bannerData.items[0].fields as BannerFields;
-
-  const { backgroundImage, title, subtitle, ctaText } = banner;
-
   return (
     <section
-      style={{
-        backgroundImage: `url(${backgroundImage?.fields?.file?.url || ""})`,
-      }}
+      // style={{
+      //   backgroundImage: `url(${backgroundImage?.fields?.file?.url || ""})`,
+      // }}
       className="relative min-h-screen bg-cover bg-center bg-no-repeat object-cover w-full"
     >
       <div
@@ -71,10 +64,10 @@ export default async function Banner() {
                   <span
                     className={clsx(
                       roboto.className,
-                      "text-4xl tracking-[3px] text-[#E7DCD8]"
+                      "text-4xl tracking-[3px] text-[#E7DCD8] uppercase"
                     )}
                   >
-                    {title}
+                    ELITE LIFE
                   </span>
                 </div>
 
@@ -95,11 +88,11 @@ export default async function Banner() {
                   >
                     <span className="pt-2 leading-10 text-6xl xs:text-5xl">
                       {" "}
-                      {subtitle.substring(0, 10)}
+                      Chuẩn cho
                     </span>
                     <br />
                     <span className="pt-2 leading-10 text-6xl xs:text-5xl">
-                      {subtitle.substring(10)}
+                      cuộc sống ưu tú
                     </span>
                   </h1>
                 </div>
@@ -120,7 +113,7 @@ export default async function Banner() {
                   "text-sm font-semibold uppercase text-white cursor-pointer"
                 )}
               >
-                {ctaText}
+                Đăng ký tư vấn
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
