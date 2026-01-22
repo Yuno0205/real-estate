@@ -1,5 +1,5 @@
-import { Roboto, Arsenal } from "next/font/google";
 import clsx from "clsx";
+import { Arsenal, Roboto } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin", "vietnamese"],
@@ -10,12 +10,12 @@ const arsenal = Arsenal({
   subsets: ["latin", "vietnamese"],
   weight: ["400", "700"],
 });
-export default function Banner() {
+export default async function Banner() {
   return (
     <section
-      style={{
-        backgroundImage: "url(/static/images/bg-rs.jpg)",
-      }}
+      // style={{
+      //   backgroundImage: `url(${backgroundImage?.fields?.file?.url || ""})`,
+      // }}
       className="relative min-h-screen bg-cover bg-center bg-no-repeat object-cover w-full"
     >
       <div
@@ -64,7 +64,7 @@ export default function Banner() {
                   <span
                     className={clsx(
                       roboto.className,
-                      "text-4xl tracking-[3px] text-[#E7DCD8]"
+                      "text-4xl tracking-[3px] text-[#E7DCD8] uppercase"
                     )}
                   >
                     ELITE LIFE

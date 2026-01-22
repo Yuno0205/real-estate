@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Specify the weights you want to use
+  weight: ["400", "500", "600", "700"],
 });
 export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
