@@ -1,5 +1,3 @@
-// lib/data.ts
-
 export const bannerData = {
   project: "ELITE LIFE",
   heading: {
@@ -7,7 +5,7 @@ export const bannerData = {
     line2: "cuộc sống ưu tú",
   },
   ctaText: "Đăng ký tư vấn",
-  backgroundImage: "/static/images/bg-rs.jpg",
+  backgroundImage: "/static/images/banner.webp",
 };
 
 export const overviewData = {
