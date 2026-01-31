@@ -1,10 +1,11 @@
-import Banner from "./components/Banner";
+import HeroSection from "../components/sections/HeroSection";
+import Banner from "../components/sections/HeroSection";
 import BlueZone from "./components/BlueZone";
 import { Club } from "./components/Club";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
-import { Footer } from "./components/Footer";
-import Header from "./components/Header";
+import { Footer } from "../components/layout/Footer";
+import Header from "../components/layout/Header";
 import { Infomation } from "./components/Infomation";
 import { Location } from "./components/Location";
 import News from "./components/News";
@@ -18,8 +19,7 @@ import Showcase from "./components/Showcase";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Banner />
+      <HeroSection />
       <BlueZone />
       <Overall />
       <SaiGonRiver />
@@ -36,7 +36,6 @@ export default function Home() {
       <Testimonial />
       <Exp /> */}
       <Infomation />
-      <Footer />
     </>
   );
 }
