@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { Arsenal, Pinyon_Script, Roboto } from "next/font/google";
+import Image from "next/image";
 
 const arsenal = Arsenal({
   subsets: ["vietnamese"],
@@ -23,15 +24,15 @@ export default async function Overall() {
           <h2
             className={clsx(
               "text-6xl uppercase text-[#2065AD]",
-              arsenal.className
+              arsenal.className,
             )}
           >
-            title 1
+            Sức hấp dẫn của
           </h2>
           <span
             className={clsx("text-6xl mt-3 text-[#3F737B]", pinyon.className)}
           >
-            title 2
+            Kiến trúc cộng sinh tại dự án
           </span>
         </div>
       </div>
@@ -63,13 +64,13 @@ export default async function Overall() {
         <div className="absolute inset-0 w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-bottom bg-no-repeat bg-[20%_auto] opacity-50 pointer-events-none"></div>
 
         <div className="relative flex z-2 md:flex-col md:px-4">
-          <div className="w-3/4 object-cover md:w-full relative">
-            {/* <Image
-              src={`https:${data.mainImage.fields?.file?.url}`}
+          <div className="w-3/4 object-cover md:w-full relative min-h-[400px] h-[400px] rounded-xl overflow-hidden px-4">
+            <Image
+              src="/static/images/contrucsion.jpg"
               fill
-              alt={data.mainImage.fields?.title}
+              alt="overall"
               className="rounded-xl object-cover"
-            /> */}
+            />
           </div>
           <div className="w-1/4 flex md:w-full">
             <div className="w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-top bg-no-repeat bg-[56%_auto] px-5 flex flex-col relative justify-center">
@@ -78,15 +79,15 @@ export default async function Overall() {
                   <span
                     className={clsx(
                       "text-[#286278] font-bold text-5xl",
-                      arsenal.className
+                      arsenal.className,
                     )}
                   >
-                    textbold 1{" "}
+                    Diện tích 3,5HA{" "}
                   </span>
                   <span
                     className={clsx(
                       "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-3xl",
-                      arsenal.className
+                      arsenal.className,
                     )}
                   >
                     BÊN CẠNH SÔNG NƯỚC
@@ -95,7 +96,7 @@ export default async function Overall() {
                       <span
                         className={clsx(
                           "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-3xl",
-                          arsenal.className
+                          arsenal.className,
                         )}
                       >
                         THƠ MỘNG
@@ -110,15 +111,15 @@ export default async function Overall() {
                   <span
                     className={clsx(
                       "text-[#286278] font-semibold text-4xl",
-                      roboto.className
+                      roboto.className,
                     )}
                   >
-                    textbold 2<sup className="text-[#30676E] text-3xl">2</sup>
+                    6000M<sup className="text-[#30676E] text-3xl">2</sup>
                   </span>
                   <span
                     className={clsx(
                       "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-xl uppercase pl-2",
-                      arsenal.className
+                      arsenal.className,
                     )}
                   >
                     Cây xanh, công viên
@@ -127,7 +128,7 @@ export default async function Overall() {
                       <span
                         className={clsx(
                           "text-transparent bg-clip-text bg-gradient-to-b from-[#1C4370] to-[#86A5AB] text-xl uppercase ",
-                          arsenal.className
+                          arsenal.className,
                         )}
                       >
                         Bên sông
@@ -140,7 +141,7 @@ export default async function Overall() {
               <ol
                 className={clsx(
                   "list-decimal list-inside text-left text-[#2B5169] font-semibold",
-                  arsenal.className
+                  arsenal.className,
                 )}
               >
                 {/* {data.highlight.map((item: any, index: number) => (

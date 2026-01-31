@@ -1,5 +1,5 @@
 import Banner from "./components/Banner";
-import BlueZoneWrapper from "./components/BlueZoneWrapper";
+import BlueZone from "./components/BlueZone";
 import { Club } from "./components/Club";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Header />
       <Banner />
-      <BlueZoneWrapper />
+      <BlueZone />
       <Overall />
       <SaiGonRiver />
       <Offer />

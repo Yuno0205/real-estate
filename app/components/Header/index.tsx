@@ -35,7 +35,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/"}
                   >
@@ -46,7 +46,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/about"}
                   >
@@ -57,7 +57,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/contact"}
                   >
@@ -68,7 +68,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/contact"}
                   >
@@ -79,7 +79,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/contact"}
                   >
@@ -90,7 +90,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-[16px] font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/contact"}
                   >
@@ -101,7 +101,7 @@ export default function Header() {
                   <Link
                     className={clsx(
                       "text-white uppercase mx-5 font-semibold py-6 text-sm",
-                      playfair.className
+                      playfair.className,
                     )}
                     href={"/contact"}
                   >
@@ -178,7 +178,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
@@ -189,7 +189,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
@@ -200,7 +200,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
@@ -211,7 +211,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
@@ -222,7 +222,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
@@ -233,7 +233,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
@@ -244,7 +244,7 @@ export default function Header() {
               <Link
                 className={clsx(
                   "text-black uppercase font-semibold text-sm px-4",
-                  playfair.className
+                  playfair.className,
                 )}
                 href={"/"}
               >
