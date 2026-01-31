@@ -1,5 +1,7 @@
 import clsx from "clsx";
 import { Arsenal, Roboto } from "next/font/google";
+import Image from "next/image";
+import { bannerData } from "@/lib/data";
 
 const roboto = Roboto({
   subsets: ["latin", "vietnamese"],
@@ -10,19 +12,25 @@ const arsenal = Arsenal({
   subsets: ["latin", "vietnamese"],
   weight: ["400", "700"],
 });
-export default async function Banner() {
-  return (
-    <section
-      // style={{
-      //   backgroundImage: `url(${backgroundImage?.fields?.file?.url || ""})`,
-      // }}
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat object-cover w-full"
-    >
-      <div
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
-        className="z-2 absolute bottom-0 left-0 right-0 top-0 h-full w-full opacity-25 transition-all duration-300"
-      ></div>
 
+const { project, heading, ctaText, backgroundImage } = bannerData;
+
+export default function Banner() {
+  return (
+    <section className="relative min-h-screen w-full overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={backgroundImage}
+          alt="HeroSection Background"
+          fill
+          priority
+          className="object-cover object-center"
+          quality={85}
+        />
+        <div className="absolute inset-0 bg-black/50" /> {/* Overlay */}
+      </div>
+
+      {/* Wave */}
       <div className="absolute bottom-[-1px] left-0 w-full rotate-180 overflow-hidden leading-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -64,10 +72,10 @@ export default async function Banner() {
                   <span
                     className={clsx(
                       roboto.className,
-                      "text-4xl tracking-[3px] text-[#E7DCD8] uppercase"
+                      "text-4xl tracking-[3px] text-[#E7DCD8] uppercase",
                     )}
                   >
-                    ELITE LIFE
+                    {project}
                   </span>
                 </div>
 
@@ -75,7 +83,7 @@ export default async function Banner() {
                   <h1
                     className={clsx(
                       roboto.className,
-                      "text-7xl font-semibold tracking-[-3px] text-transparent"
+                      "text-7xl font-semibold tracking-[-3px] text-transparent",
                     )}
                     style={{
                       backgroundImage:
@@ -88,11 +96,11 @@ export default async function Banner() {
                   >
                     <span className="pt-2 leading-10 text-6xl xs:text-5xl">
                       {" "}
-                      Chuẩn cho
+                      {heading.line1}
                     </span>
                     <br />
                     <span className="pt-2 leading-10 text-6xl xs:text-5xl">
-                      cuộc sống ưu tú
+                      {heading.line2}{" "}
                     </span>
                   </h1>
                 </div>
@@ -110,10 +118,10 @@ export default async function Banner() {
               <span
                 className={clsx(
                   arsenal.className,
-                  "text-sm font-semibold uppercase text-white cursor-pointer"
+                  "text-sm font-semibold uppercase text-white cursor-pointer",
                 )}
               >
-                Đăng ký tư vấn
+                {ctaText}
               </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

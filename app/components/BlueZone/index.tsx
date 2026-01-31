@@ -1,6 +1,7 @@
 "use client";
-import { BlueZoneFields } from "@/types/contentful";
+
 import clsx from "clsx";
+import { PlayIcon } from "lucide-react";
 import { Calistoga } from "next/font/google";
 import { useState } from "react";
 import ReactPlayer from "react-player";
@@ -10,7 +11,7 @@ const calistoga = Calistoga({
   weight: "400",
 });
 
-export default function BlueZone({ data }: { data: BlueZoneFields }) {
+export default function BlueZone() {
   const [isPlay, setIsPlay] = useState(false);
 
   return (
@@ -22,21 +23,7 @@ export default function BlueZone({ data }: { data: BlueZoneFields }) {
             onClick={() => setIsPlay(!isPlay)}
             className="relative mb-12 flex h-[75px] w-[75px] items-center justify-center rounded-full bg-[#FF7A56] cursor-pointer"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="size-8"
-              color="#fff"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
-              />
-            </svg>
+            <PlayIcon className="text-white" />
             <div className="absolute w-full h-full top-0 left-0 animate-ping rounded-full bg-[#FF7A56] opacity-75 duration-3000"></div>
           </div>
 
@@ -45,7 +32,7 @@ export default function BlueZone({ data }: { data: BlueZoneFields }) {
             <h2
               className={clsx(
                 "text-5xl font-normal py-4 leading-tight",
-                calistoga.className
+                calistoga.className,
               )}
               style={{
                 backgroundImage:
@@ -55,9 +42,9 @@ export default function BlueZone({ data }: { data: BlueZoneFields }) {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              <span className="pb-4">{data.title1} </span>
+              <span className="pb-4">KIẾN TRÚC XANH </span>
               <br />
-              <span className="mt-4"> {data.title2}</span>
+              <span className="mt-4"> CHUẨN CHO CUỘC SỐNG ƯU TÚ</span>
             </h2>
           </div>
 
@@ -86,7 +73,11 @@ export default function BlueZone({ data }: { data: BlueZoneFields }) {
                 />
               </svg>
               <span className="font-semibold text-[#25436E]">
-                {data.content}
+                Kiến trúc xanh là một phong cách thiết kế tập trung vào việc
+                tích hợp hài hòa giữa con người và thiên nhiên. Thay vì tác động
+                tiêu cực đến thiên nhiên, phong cách này cố gắng làm sao để các
+                công trình xây dựng và cảnh quan xung quanh tương hỗ lẫn nhau,
+                cùng tồn tại và phát triển
               </span>
             </div>
           </div>
