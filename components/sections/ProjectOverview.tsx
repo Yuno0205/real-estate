@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { Arsenal, Pinyon_Script, Roboto } from "next/font/google";
 import Image from "next/image";
-import { overviewData } from "@/lib/data";
 
 const arsenal = Arsenal({
   subsets: ["vietnamese"],
@@ -18,7 +17,6 @@ const roboto = Roboto({
   weight: ["400", "500", "700"],
 });
 
-const { gallery } = overviewData;
 export default async function ProjectOverview() {
   return (
     <div className="w-full relative">
