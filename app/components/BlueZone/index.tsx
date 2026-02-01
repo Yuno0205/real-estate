@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { PlayIcon } from "lucide-react";
+import { BookIcon, PlayIcon } from "lucide-react";
 import { Calistoga } from "next/font/google";
 import { useState } from "react";
 import ReactPlayer from "react-player";
@@ -58,20 +58,7 @@ export default function BlueZone() {
           >
             <div className="flex flex-col justify-between gap-3">
               {/* Book icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-                />
-              </svg>
+              <BookIcon />
               <span className="font-semibold text-[#25436E]">
                 Kiến trúc xanh là một phong cách thiết kế tập trung vào việc
                 tích hợp hài hòa giữa con người và thiên nhiên. Thay vì tác động
@@ -81,19 +68,6 @@ export default function BlueZone() {
               </span>
             </div>
           </div>
-
-          {/* <div className="mb-6">
-            <p
-              className={clsx(roboto.className, "leading-loose text-[#1F3A5B]")}
-            >
-              Trên khắp thế giới, có năm vùng đất được tìm ra với cái tên “Blue
-              Zones gồm: Vùng Loma Linda (bang California, Mỹ), Đảo Ikaria (Hy
-              Lạp), Okinawa (Nhật Bản), Sardinia (Italy) và bán đảo Nicoya
-              (Costa Rica). Điểm chung của những vùng đất này là thiên nhiên
-              trong lành, con người sống gần gũi với thiên nhiên trong từng hơi
-              thở, bước đi, bữa ăn, giấc ngủ.
-            </p>
-          </div> */}
 
           {isPlay && (
             <div

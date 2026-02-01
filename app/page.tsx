@@ -1,11 +1,8 @@
 import HeroSection from "../components/sections/HeroSection";
-import Banner from "../components/sections/HeroSection";
 import BlueZone from "./components/BlueZone";
 import { Club } from "./components/Club";
 import { Extention } from "./components/Extention";
 import { Feature } from "./components/Feature";
-import { Footer } from "../components/layout/Footer";
-import Header from "../components/layout/Header";
 import { Infomation } from "./components/Infomation";
 import { Location } from "./components/Location";
 import News from "./components/News";
