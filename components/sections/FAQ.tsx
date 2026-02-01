@@ -10,7 +10,7 @@ import {
 import { useState } from "react";
 
 type AccordionItemValue = "item-1" | "item-2" | "item-3" | "item-4";
-export const QandA = () => {
+export const FAQ = () => {
   const [openItem, setOpenItem] = useState<AccordionItemValue | null>(null);
 
   const toggleItem = (item: AccordionItemValue) => {

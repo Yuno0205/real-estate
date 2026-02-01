@@ -16,9 +16,10 @@ const roboto = Roboto({
   subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "700"],
 });
-export default async function Overall() {
+
+export default async function ProjectOverview() {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <div className="py-[60px] bg-[#DFFDE8]">
         <div className="text-center gap-2 flex flex-col">
           <h2
@@ -37,34 +38,36 @@ export default async function Overall() {
         </div>
       </div>
 
-      <div className="w-full bg-[#DFFDE8E5]">
-        <div className="flex xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10">
-          {/* {data.slides.map((item: any, index: number) => (
-            <div className="w-1/3 px-4 xs:w-full" key={index}>
-              <div className="w-full relative">
-                <Image
-                  src={`https:${item.fields?.file?.url}`}
-                  alt="overall"
-                  className="object-cover"
-                  fill
-                  placeholder="blur"
-                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC"
-                />
+      {/* <div className="w-full bg-[#DFFDE8E5]">
+        <div className="flex xs:flex-col w-full max-w-[1140px] mx-auto xs:gap-10  z-2 pt-[60px] pb-[40px]">
+          {gallery.map(
+            (item: { image: string; title: string }, index: number) => (
+              <div className="w-1/3 px-4 xs:w-full" key={index}>
+                <div className="w-full relative">
+                  <Image
+                    src={item.image}
+                    alt="overall"
+                    className="object-cover min-h-[400px]"
+                    fill
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC"
+                  />
+                </div>
+                <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
+                  {item.title}
+                </span>
               </div>
-              <span className="py-[5px] px-4 mb-5 text-white bg-[#115475] font-semibold">
-                {item.fields?.title}
-              </span>
-            </div>
-          ))} */}
+            ),
+          )}
         </div>
-      </div>
+      </div> */}
 
       <section className="pt-[60px] pb-[80px] relative">
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-[#DFFDE8E5] to-[#F3F3F3] pointer-events-none"></div>
         <div className="absolute inset-0 w-full h-full bg-[url('/static/images/leaft_right.png')] bg-right-bottom bg-no-repeat bg-[20%_auto] opacity-50 pointer-events-none"></div>
 
         <div className="relative flex z-2 md:flex-col md:px-4">
-          <div className="w-3/4 object-cover md:w-full relative min-h-[400px] h-[400px] rounded-xl overflow-hidden px-4">
+          <div className="w-3/4 object-cover md:w-full relative min-h-[400px] rounded-xl overflow-hidden px-4">
             <Image
               src="/static/images/contrucsion.jpg"
               fill

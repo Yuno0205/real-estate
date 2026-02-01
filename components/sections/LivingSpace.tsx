@@ -23,7 +23,7 @@ const mont = Montserrat({
   weight: ["400", "700"],
 });
 
-export default function SaiGonRiver() {
+export default function LivingSpace() {
   return (
     <div className="w-full h-full">
       <div className="w-full max-w-[1140px] mx-auto pt-[167px] pb-[200px] md:pt-[100px] md:pb-[100px] xs:pt-[60px] xs:pb-[60px] flex px-3 md:flex-col">
@@ -33,7 +33,7 @@ export default function SaiGonRiver() {
             <span
               className={clsx(
                 "text-3xl font-bold text-[#185822]",
-                mont.className
+                mont.className,
               )}
             >
               Elite Life
@@ -72,7 +72,7 @@ export default function SaiGonRiver() {
               <footer
                 className={clsx(
                   "font-semibold uppercase leading-5 tracking-wide text-[#FF7A56]",
-                  oswald.className
+                  oswald.className,
                 )}
               >
                 Sản phẩm của nhà sáng lập Tân Thái Thịnh
@@ -85,6 +85,7 @@ export default function SaiGonRiver() {
             src={img}
             alt="img"
             className="rounded-lg object-cover h-4/5"
+            sizes="md:50vw 100vw"
           />
         </div>
         <div className="flex flex-1 flex-col justify-around md:text-center">

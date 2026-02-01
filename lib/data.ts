@@ -1,5 +1,3 @@
-// lib/data.ts
-
 export const bannerData = {
   project: "ELITE LIFE",
   heading: {
@@ -7,19 +5,10 @@ export const bannerData = {
     line2: "cuộc sống ưu tú",
   },
   ctaText: "Đăng ký tư vấn",
-  backgroundImage: "/static/images/bg-rs.jpg",
+  backgroundImage: "/static/images/banner.webp",
 };
 
 export const overviewData = {
-  heading: "Tổng quan",
-  subHeading: "Dự án",
-
-  mainFeature: {
-    title: "Bên cạnh sông nước",
-    highlight: "Thơ mộng",
-    description: "Cây xanh, công viên bên sông",
-    subDescription: "Bên sông",
-  },
   gallery: [
     { image: "/static/images/mb1.jpg", title: "Mặt bằng tổng thể" },
     { image: "/static/images/park1.jpg", title: "Công viên trung tâm" },

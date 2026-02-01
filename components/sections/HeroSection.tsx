@@ -15,7 +15,7 @@ const arsenal = Arsenal({
 
 const { project, heading, ctaText, backgroundImage } = bannerData;
 
-export default function Banner() {
+export default function HeroSection() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -25,9 +25,10 @@ export default function Banner() {
           fill
           priority
           className="object-cover object-center"
-          quality={85}
+          quality={100}
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/50" /> {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40" /> {/* Overlay */}
       </div>
 
       {/* Wave */}
