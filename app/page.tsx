@@ -1,38 +1,35 @@
+import { ActionForm } from "../components/sections/ActionForm";
+import { FAQ } from "../components/sections/FAQ";
+import { Features } from "../components/sections/Features";
+import GreenArchitecture from "../components/sections/GreenArchitecture";
 import HeroSection from "../components/sections/HeroSection";
-import BlueZone from "./components/BlueZone";
-import { Club } from "./components/Club";
-import { Extention } from "./components/Extention";
-import { Feature } from "./components/Feature";
-import { Infomation } from "./components/Infomation";
-import { Location } from "./components/Location";
-import News from "./components/News";
-import { Offer } from "./components/Offer";
-import Overall from "./components/Overall";
-import { QandA } from "./components/Q&A";
-import { Resort } from "./components/Resort";
-import SaiGonRiver from "./components/SaiGonRiver";
-import Showcase from "./components/Showcase";
+import LivingSpace from "../components/sections/LivingSpace";
+import { Location } from "../components/sections/Location";
+import News from "../components/sections/News";
+import { ParkImage } from "../components/sections/ParkImage";
+import { PremiumSpace } from "../components/sections/PremiumSpace";
+import ProjectOverview from "../components/sections/ProjectOverview";
+import { Service } from "../components/sections/Service";
+import Showcase from "../components/sections/Showcase";
+import { Utility } from "../components/sections/Utility";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <BlueZone />
-      <Overall />
-      <SaiGonRiver />
-      <Offer />
-      <Feature />
+      <GreenArchitecture />
+      <ProjectOverview />
+      <LivingSpace />
+      <Service />
+      <Features />
       <Location />
-      <Extention />
-      <Club />
-      <Resort />
-      <QandA />
+      <Utility />
+      <ParkImage />
+      <PremiumSpace />
+      <FAQ />
       <Showcase />
       <News />
-      {/* <Spa />
-      <Testimonial />
-      <Exp /> */}
-      <Infomation />
+      <ActionForm />
     </>
   );
 }

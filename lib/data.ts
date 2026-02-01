@@ -9,15 +9,6 @@ export const bannerData = {
 };
 
 export const overviewData = {
-  heading: "Tổng quan",
-  subHeading: "Dự án",
-
-  mainFeature: {
-    title: "Bên cạnh sông nước",
-    highlight: "Thơ mộng",
-    description: "Cây xanh, công viên bên sông",
-    subDescription: "Bên sông",
-  },
   gallery: [
     { image: "/static/images/mb1.jpg", title: "Mặt bằng tổng thể" },
     { image: "/static/images/park1.jpg", title: "Công viên trung tâm" },

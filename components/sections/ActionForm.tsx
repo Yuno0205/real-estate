@@ -1,12 +1,12 @@
 import clsx from "clsx";
 import { Arsenal } from "next/font/google";
-import ContactForm from "../ContactForm";
+import ContactForm from "./ContactForm";
 
 const arsenal = Arsenal({
   subsets: ["vietnamese", "latin"],
   weight: ["400", "700"],
 });
-export const Infomation = () => {
+export const ActionForm = () => {
   return (
     <section className="w-full h-full min-h-screen bg-[url('/static/images/bg-footer.png')] relative py-24">
       {/* Lớp phủ */}
@@ -18,7 +18,7 @@ export const Infomation = () => {
           <h1
             className={clsx(
               arsenal.className,
-              "text-2xl text-white font-semibold mb-3 xs:text-center"
+              "text-2xl text-white font-semibold mb-3 xs:text-center",
             )}
           >
             THÔNG TIN LIÊN HỆ
@@ -106,7 +106,7 @@ export const Infomation = () => {
             <span
               className={clsx(
                 "text-white text-2xl uppercase",
-                arsenal.className
+                arsenal.className,
               )}
             >
               Đăng kí nhận thông tin dự án

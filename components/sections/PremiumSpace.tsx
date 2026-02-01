@@ -19,7 +19,7 @@ const pinyon = Pinyon_Script({
   subsets: ["vietnamese", "latin", "latin-ext"],
   weight: ["400"],
 });
-export const Resort = () => {
+export const PremiumSpace = () => {
   return (
     <div className="w-full h-full min-h-screen">
       <section
@@ -32,7 +32,7 @@ export const Resort = () => {
               <span
                 className={clsx(
                   arsenal.className,
-                  "text-[#396198] text-5xl font-bold uppercase"
+                  "text-[#396198] text-5xl font-bold uppercase",
                 )}
               >
                 Mỗi căn nhà
@@ -47,7 +47,7 @@ export const Resort = () => {
             <span
               className={clsx(
                 arsenal.className,
-                "text-[#396198] text-5xl font-semibold uppercase text-end"
+                "text-[#396198] text-5xl font-semibold uppercase text-end",
               )}
             >
               Của riêng bạn
@@ -101,7 +101,7 @@ export const Resort = () => {
           <span
             className={clsx(
               arsenal.className,
-              "text-5xl text-[#1E5675] font-semibold uppercase"
+              "text-5xl text-[#1E5675] font-semibold uppercase",
             )}
           >
             MẶT BẰNG NHÀ LIÊN KẾ
@@ -125,7 +125,7 @@ export const Resort = () => {
           <span
             className={clsx(
               arsenal.className,
-              "text-5xl text-[#1E5675] font-semibold uppercase mb-12 mt-24"
+              "text-5xl text-[#1E5675] font-semibold uppercase mb-12 mt-24",
             )}
           >
             MẶT BẰNG CĂN GỐC

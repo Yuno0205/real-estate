@@ -11,7 +11,7 @@ const calistoga = Calistoga({
   weight: "400",
 });
 
-export default function BlueZone() {
+export default function GreenArchitecture() {
   const [isPlay, setIsPlay] = useState(false);
 
   return (

@@ -5,7 +5,7 @@ const arsenal = Arsenal({
   subsets: ["latin", "vietnamese"],
   weight: ["400", "700"],
 });
-export const Offer = () => {
+export const Service = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full max-w-[1140px] mx-auto px-12 py-14 bg-[#FF7A56] shadow-xl  tracking-wider mb-[-140px] z-2 relative">
@@ -84,7 +84,7 @@ export const Offer = () => {
                 <div
                   className={clsx(
                     arsenal.className,
-                    "text-sm font-semibold uppercase text-white"
+                    "text-sm font-semibold uppercase text-white",
                   )}
                 >
                   Đăng ký tư vấn

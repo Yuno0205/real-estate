@@ -10,7 +10,7 @@ const david = David_Libre({
   subsets: ["vietnamese"],
   weight: "400",
 });
-export const Feature = () => {
+export const Features = () => {
   return (
     <>
       <div
@@ -66,7 +66,7 @@ export const Feature = () => {
             <span
               className={clsx(
                 david.className,
-                "tracking-widest text-justify pb-3"
+                "tracking-widest text-justify pb-3",
               )}
             >
               Khoảng xanh rộng lớn bao quanh cùng địa hình một mặt giáp sông,
@@ -95,7 +95,7 @@ export const Feature = () => {
             <span
               className={clsx(
                 david.className,
-                "tracking-widest text-justify pb-3"
+                "tracking-widest text-justify pb-3",
               )}
             >
               Thay cho hàng rào ngăn cách, cư dân trong khu compound Elite Life
@@ -128,7 +128,7 @@ export const Feature = () => {
             <span
               className={clsx(
                 david.className,
-                "tracking-widest text-justify pb-3"
+                "tracking-widest text-justify pb-3",
               )}
             >
               Không chỉ mở rộng diện tích phủ xanh, Elite Life còn làm dày thêm

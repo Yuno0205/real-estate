@@ -13,7 +13,7 @@ const arsenal = Arsenal({
   subsets: ["vietnamese", "latin"],
   weight: ["400", "700"],
 });
-export const Extention = () => {
+export const Utility = () => {
   return (
     <div
       style={{ backgroundSize: "10% auto" }}
@@ -51,7 +51,7 @@ export const Extention = () => {
           <span
             className={clsx(
               "text-2xl text-[#6E6B6B] font-semibold",
-              arsenal.className
+              arsenal.className,
             )}
           >
             Vườn công viên 4 mùa
